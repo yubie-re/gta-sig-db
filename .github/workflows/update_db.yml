@@ -18,11 +18,10 @@ jobs:
           repository: yubie-re/gtav-sigscan
           path: gtav-sigscan
 
-      - name: Setup C++ environment with CMake
-        uses: actions/setup-cpp@v2
-        with:
-          cmake-version: 'latest'
-          ninja-version: 'latest'
+      - name: Install C++ compiler and CMake
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++ cmake ninja-build
 
       - name: Build the gtav-sigscan tool
         run: |
@@ -32,7 +31,7 @@ jobs:
 
       - name: Run the gtav-sigscan tool to generate new signatures
         run: |
-          ./gtav-sigscan/build/sigscan -savejson
+          ./gtav-sigscan/build/gtav-sigscan -savejson
         working-directory: gtav-sigscan
 
       - name: Checkout the gta-sig-db repository
