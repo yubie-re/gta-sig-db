@@ -26,6 +26,7 @@
                     <th>Protection Flags</th>
                     <th>Module Size</th>
                     <th>Time</th>
+                    <th>Build</th>
                     <th>Translation</th>
                 </tr>
             </thead>
@@ -41,6 +42,7 @@
                     <th>Page Low</th>
                     <th>Page High</th>
                     <th>Time</th>
+                    <th>Build</th>
                     <th>Translation</th>
                 </tr>
             </thead>
@@ -75,12 +77,12 @@
                                 valuesToShow = [
                                     item.m_firstByte, item.m_len, item.m_hash, item.m_pageLow,
                                     item.m_pageHigh, item.m_protFlags, item.m_moduleSize,
-                                    item.time, item.translation
+                                    item.time, item.build, item.translation
                                 ];
                             } else if (tableId === 'intgTable') {
                                 valuesToShow = [
                                     item.m_firstByte, item.m_len, item.m_hash, item.m_pageLow,
-                                    item.m_pageHigh, item.time, item.translation
+                                    item.m_pageHigh, item.time, item.build, item.translation
                                 ];
                             }
                             valuesToShow.forEach(value => {
