@@ -1,0 +1,64 @@
+name: Update GTA V Signature Database
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at midnight
+  workflow_dispatch:
+  push:
+    branches:
+      - main  # Adjust this as necessary for your workflow branches
+
+jobs:
+  update-signatures:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the gtav-sigscan tool
+        uses: actions/checkout@v2
+        with:
+          repository: yubie-re/gtav-sigscan
+          path: gtav-sigscan
+
+      - name: Setup C++ environment with CMake
+        uses: actions/setup-cpp@v2
+        with:
+          cmake-version: 'latest'
+          ninja-version: 'latest'
+
+      - name: Build the gtav-sigscan tool
+        run: |
+          cd gtav-sigscan
+          cmake -S . -B build -G Ninja
+          cmake --build build
+
+      - name: Run the gtav-sigscan tool to generate new signatures
+        run: |
+          ./gtav-sigscan/build/sigscan -savejson
+        working-directory: gtav-sigscan
+
+      - name: Checkout the gta-sig-db repository
+        uses: actions/checkout@v2
+        with:
+          path: gta-sig-db
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Copy new signatures to gta-sig-db and deduplicate
+        run: |
+          cp gtav-sigscan/signatures.json gta-sig-db/new_signatures.json
+          python gta-sig-db/update_signatures.py
+        working-directory: gta-sig-db
+
+      - name: Commit and push changes if there are updates
+        run: |
+          cd gta-sig-db
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add signatures.json
+          if git diff --staged --quiet; then
+            echo "No changes to signatures.json"
+          else
+            git commit -m "Update signatures.json with new data"
+            git push
