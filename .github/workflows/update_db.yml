@@ -29,9 +29,21 @@ jobs:
           cmake -S . -B build -G Ninja
           cmake --build build
 
+      - name: Clone gta5-sig-samples into gtav-sigscan/files
+        run: |
+          mkdir files
+          git clone --depth 1 https://github.com/yubie-re/gta5-sig-samples.git files
+          rm -rf files/.git
+        env:
+          GIT_TERMINAL_PROMPT: '0'  # Disable git prompt
+          GIT_ASKPASS: 'echo'
+          GIT_HTTPS_USERNAME: 'x-access-token'
+          GIT_HTTPS_PASSWORD: ${{ secrets.GTA_SAMPLE_PAT }}
+        working-directory: gtav-sigscan
+
       - name: Run the gtav-sigscan tool to generate new signatures
         run: |
-          ./build/src/sigscan -savejson
+          ./build/src/sigscan -savejson > /dev/null 2>&1
         working-directory: gtav-sigscan
 
       - name: Checkout the gta-sig-db repository
