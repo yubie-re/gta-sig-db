@@ -1,1 +1,170 @@
-{"RTMA":[], "INTG":[]}
+{
+    "RTMA": [
+        {
+            "m_firstByte": 82,
+            "m_len": 13,
+            "m_hash": 312495840,
+            "m_pageLow": 988,
+            "m_pageHigh": 989,
+            "m_protFlags": 2,
+            "m_moduleSize": 7456,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 84,
+            "m_len": 22,
+            "m_hash": 2770280698,
+            "m_pageLow": 124,
+            "m_pageHigh": 128,
+            "m_protFlags": 2,
+            "m_moduleSize": 680,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 68,
+            "m_len": 15,
+            "m_hash": 3565914902,
+            "m_pageLow": 68,
+            "m_pageHigh": 72,
+            "m_protFlags": 2,
+            "m_moduleSize": 328,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 66,
+            "m_hash": 254388434,
+            "m_pageLow": 3750,
+            "m_pageHigh": 3790,
+            "m_protFlags": 64,
+            "m_moduleSize": 23888,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 71,
+            "m_len": 21,
+            "m_hash": 240757205,
+            "m_pageLow": 322,
+            "m_pageHigh": 326,
+            "m_protFlags": 2,
+            "m_moduleSize": 1308,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 83,
+            "m_len": 12,
+            "m_hash": 467630008,
+            "m_pageLow": 66,
+            "m_pageHigh": 70,
+            "m_protFlags": 64,
+            "m_moduleSize": 356,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 82,
+            "m_len": 13,
+            "m_hash": 2225204428,
+            "m_pageLow": 15,
+            "m_pageHigh": 19,
+            "m_protFlags": 2,
+            "m_moduleSize": 260,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 65,
+            "m_len": 10,
+            "m_hash": 3522056628,
+            "m_pageLow": 25,
+            "m_pageHigh": 29,
+            "m_protFlags": 2,
+            "m_moduleSize": 148,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 58,
+            "m_len": 62,
+            "m_hash": 2181489740,
+            "m_pageLow": 670,
+            "m_pageHigh": 740,
+            "m_protFlags": 2,
+            "m_moduleSize": 3728,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 68,
+            "m_len": 9,
+            "m_hash": 2755947301,
+            "m_pageLow": 38,
+            "m_pageHigh": 42,
+            "m_protFlags": 2,
+            "m_moduleSize": 324,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 67,
+            "m_len": 10,
+            "m_hash": 734618926,
+            "m_pageLow": 964,
+            "m_pageHigh": 965,
+            "m_protFlags": 2,
+            "m_moduleSize": 5104,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 123,
+            "m_len": 17,
+            "m_hash": 3279441969,
+            "m_pageLow": 805,
+            "m_pageHigh": 809,
+            "m_protFlags": 2,
+            "m_moduleSize": 6804,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 66,
+            "m_len": 16,
+            "m_hash": 501797292,
+            "m_pageLow": 159,
+            "m_pageHigh": 163,
+            "m_protFlags": 2,
+            "m_moduleSize": 1648,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 89,
+            "m_len": 13,
+            "m_hash": 2814322965,
+            "m_pageLow": 199,
+            "m_pageHigh": 203,
+            "m_protFlags": 2,
+            "m_moduleSize": 1628,
+            "m_unk1": 1,
+            "m_unk2": 1
+        },
+        {
+            "m_firstByte": 107,
+            "m_len": 16,
+            "m_hash": 4191880796,
+            "m_pageLow": 0,
+            "m_pageHigh": 2,
+            "m_protFlags": 2,
+            "m_moduleSize": 160,
+            "m_unk1": 1,
+            "m_unk2": 1
+        }
+    ],
+    "INTG": []
+}
