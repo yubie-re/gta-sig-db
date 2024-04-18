@@ -59,6 +59,6 @@ jobs:
             echo "No changes to sig_db.json"
           else
             git commit -m "Update sig_db.json with new data"
-            git push
+            git push https://${{ secrets.GITHUB_TOKEN }}@github.com/yubie-re/gta-sig-db.git
           fi
         working-directory: gta-sig-db
