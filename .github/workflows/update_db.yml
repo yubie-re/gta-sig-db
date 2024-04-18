@@ -52,7 +52,6 @@ jobs:
 
       - name: Commit and push changes if there are updates
         run: |
-          cd gta-sig-db
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add signatures.json
@@ -61,3 +60,4 @@ jobs:
           else
             git commit -m "Update signatures.json with new data"
             git push
+        working-directory: gta-sig-db
