@@ -31,7 +31,7 @@ jobs:
 
       - name: Run the gtav-sigscan tool to generate new signatures
         run: |
-          ./gtav-sigscan/build/gtav-sigscan -savejson
+          ./gtav-sigscan/build/src/gtav-sigscan -savejson
         working-directory: gtav-sigscan
 
       - name: Checkout the gta-sig-db repository
