@@ -48,7 +48,7 @@ jobs:
         run: |
           cp ../gtav-sigscan/signatures.json ./signatures.json
           python update_signatures.py
-          working-directory: gta-sig-db
+        working-directory: gta-sig-db
 
       - name: Commit and push changes if there are updates
         run: |
