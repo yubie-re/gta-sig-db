@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA V Anticheat Signatures</title>
+    <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="container-lg px-3 my-3 markdown-body">
+        <h1>GTA V Anticheat Signature Database</h1>
+        <p>This contains all past signatures (starting 4/18/2024) added to GTA V's anticheat system. Translations of signature hashes are provided when possible.</p>
+        <h2>Cheat Signatures</h2>
+        <table id="rtmaTable" class="table display">
+            <thead>
+                <tr>
+                    <th>First Byte</th>
+                    <th>Length</th>
+                    <th>Hash</th>
+                    <th>Page Low</th>
+                    <th>Page High</th>
+                    <th>Protection Flags</th>
+                    <th>Module Size</th>
+                    <th>Time</th>
+                    <th>Translation</th>
+                </tr>
+            </thead>
+            <tbody id="rtmaTableBody"></tbody>
+        </table>
+        <h2>Integ Signatures</h2>
+        <table id="intgTable" class="table display">
+            <thead>
+                <tr>
+                    <th>First Byte</th>
+                    <th>Length</th>
+                    <th>Hash</th>
+                    <th>Page Low</th>
+                    <th>Page High</th>
+                    <th>Time</th>
+                    <th>Translation</th>
+                </tr>
+            </thead>
+            <tbody id="intgTableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script>
+        
+        fetch('https://raw.githubusercontent.com/yubie-re/gta-sig-db/main/sig_db.json')
+            .then(response => response.json())
+            .then(data => {
+                const populateTable = (tableId, dataArray) => {
+                    const table = document.getElementById(tableId);
+                    const tbody = table.getElementsByTagName('tbody')[0];
+                    tbody.innerHTML = '';  // Clear existing rows
+    
+                    if (dataArray.length === 0) {
+                        // Optionally add a row indicating no data is available
+                        const row = tbody.insertRow();
+                        const cell = row.insertCell();
+                        cell.colSpan = table.getElementsByTagName('th').length;  // Span across all columns
+                        cell.textContent = 'No data available';
+                        cell.style.textAlign = 'center';
+                    } else {
+                        dataArray.forEach(item => {
+                            const row = tbody.insertRow();
+                            let valuesToShow = [];
+                            if (tableId === 'rtmaTable') {
+                                valuesToShow = [
+                                    item.m_firstByte, item.m_len, item.m_hash, item.m_pageLow,
+                                    item.m_pageHigh, item.m_protFlags, item.m_moduleSize,
+                                    item.time, item.translation
+                                ];
+                            } else if (tableId === 'intgTable') {
+                                valuesToShow = [
+                                    item.m_firstByte, item.m_len, item.m_hash, item.m_pageLow,
+                                    item.m_pageHigh, item.time, item.translation
+                                ];
+                            }
+                            valuesToShow.forEach(value => {
+                                const cell = row.insertCell();
+                                cell.textContent = value;
+                            });
+                        });
+                    }
+    
+                    // Initialize DataTables only if there are rows
+                    if ($.fn.dataTable.isDataTable(`#${tableId}`)) {
+                        $(`#${tableId}`).DataTable().destroy();
+                    }
+                    if(dataArray.length != 0)
+                    {
+                        $(`#${tableId}`).DataTable({
+                            //"order": [[tableId === 'rtmaTable' ? 7 : 5, "desc"]] // Adjust default sorting column index
+                        });
+                    }
+                };
+    
+                populateTable('rtmaTable', data.RTMA);
+                populateTable('intgTable', data.INTG);
+            })
+            .catch(error => {
+                console.error('Error loading or parsing the JSON data:', error);
+                alert('Failed to load JSON data: ' + error.message);
+            });
+    </script>
+    </body>
+</html>
