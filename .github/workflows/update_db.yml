@@ -54,10 +54,10 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add signatures.json
+          git add sig_db.json
           if git diff --staged --quiet; then
-            echo "No changes to signatures.json"
+            echo "No changes to sig_db.json"
           else
-            git commit -m "Update signatures.json with new data"
+            git commit -m "Update sig_db.json with new data"
             git push
         working-directory: gta-sig-db
