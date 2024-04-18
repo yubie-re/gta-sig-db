@@ -59,6 +59,6 @@ jobs:
             echo "No changes to sig_db.json"
           else
             git commit -m "Update sig_db.json with new data"
-            git push;
+            git push
           fi
         working-directory: gta-sig-db
