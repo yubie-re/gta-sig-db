@@ -43,6 +43,31 @@
             var a = new Date(unix * 1000);
             return a.toISOString().substring(0, 10);  
         }
+         
+        function flagToString(flag){
+            switch(flag)
+            {
+                case 0x10:
+                    return "X";
+                case 0x20:
+                    return "RX";
+                case 0x40:
+                    return "RWX";
+                case 0x80:
+                    return "RWEC";
+                case 1:
+                    return "NA";
+                case 2:
+                    return "R";
+                case 4:
+                    return "RW";
+                case 8:
+                    return "RC";
+                default:
+                    return "UNK";
+            }
+            return "UNK";
+        }
 
         fetch('https://raw.githubusercontent.com/yubie-re/gta-sig-db/main/sig_db.json')
             .then(response => response.json())
@@ -52,7 +77,7 @@
                 var rtmaArr = [];
                 var integArr = [];
                 data['RTMA'].forEach(dat => {
-                    rtmaArr.push([String(dat.m_firstByte) + " - " + String.fromCharCode(dat.m_firstByte), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), String(dat.m_protFlags), String(dat.m_moduleSize * 4000 / 1000000), timeConverter(dat.time), String(dat.build), '<code>' + (dat.translation || '') + '</code>']);
+                    rtmaArr.push([String(dat.m_firstByte) + " - " + String.fromCharCode(dat.m_firstByte), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), flagToString(dat.m_protFlags), String(dat.m_moduleSize * 4000 / 1000000), timeConverter(dat.time), String(dat.build), '<code>' + (dat.translation || '') + '</code>']);
                 });
                 data['INTG'].forEach(dat => {
                     integArr.push([String(dat.m_firstByte) + " - " + String.fromCharCode(dat.m_firstByte), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), timeConverter(dat.time), String(dat.build), String(dat.build), '<code>' + (dat.translation || '') + '</code>']);
