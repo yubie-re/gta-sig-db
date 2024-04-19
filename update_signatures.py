@@ -27,9 +27,7 @@ def merge_and_deduplicate(old_data, new_data):
         unique = {}
         for sig in combined[key]:
             sig_hash = create_signature_hash(sig)
-            if sig_hash not in unique:
-                unique[sig_hash] = sig
-            elif sig_hash in unique and not unique[sig_hash]['translation']:
+            if sig_hash not in unique or not unique[sig_hash]['translation']:
                 unique[sig_hash] = sig
         combined[key] = list(unique.values())
 
