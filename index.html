@@ -77,13 +77,13 @@
                 var rtmaArr = [];
                 var integArr = [];
                 data['RTMA'].forEach(dat => {
-                    rtmaArr.push([String(dat.m_firstByte) + " - " + String.fromCharCode(dat.m_firstByte), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), flagToString(dat.m_protFlags), String(dat.m_moduleSize * 4000 / 1000000), timeConverter(dat.time), String(dat.build), '<code>' + (dat.translation || '') + '</code>']);
+                    rtmaArr.push([String(dat.m_firstByte) + " - " + String.fromCharCode(dat.m_firstByte), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), flagToString(dat.m_protFlags), String(dat.m_moduleSize), timeConverter(dat.time), String(dat.build), '<code>' + (dat.translation || '') + '</code>']);
                 });
                 data['INTG'].forEach(dat => {
                     integArr.push([String(dat.m_firstByte) + " - " + String.fromCharCode(dat.m_firstByte), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), timeConverter(dat.time), String(dat.build), String(dat.build), '<code>' + (dat.translation || '') + '</code>']);
                 });
-                new DataTable('#rtmaTable', { data: rtmaArr, order: [[7, 'desc']], columns: [{ title: "First Byte" }, { title: "Size" }, { title: "Hash" }, { title: "Pg Low" }, { title: "Pg High" }, { title: "Flags" }, { title: "Module Size (MB)" }, { title: "Time" }, { title: "Build" }, { title: "Translation" }] });
-                new DataTable('#intgTable', { data: integArr, order: [[4, 'desc']], columns: [{ title: "First Byte" }, { title: "Size" }, { title: "Hash" }, { title: "Pg Low" }, { title: "Pg High" }, { title: "Time" }, { title: "Build" }, { title: "Translation" }] });
+                new DataTable('#rtmaTable', { data: rtmaArr,  order: [[7, 'desc']], columns: [{ title: "First Byte" }, { title: "Size" }, { title: "Hash" }, { title: "Pg Low" }, { title: "Pg High" }, { title: "Flags" }, { title: "Region Size (KB)" }, { title: "Time" }, { title: "Build" }, { title: "Translation" }] });
+                new DataTable('#intgTable', { data: integArr,  order: [[4, 'desc']], columns: [{ title: "First Byte" }, { title: "Size" }, { title: "Hash" }, { title: "Pg Low" }, { title: "Pg High" }, { title: "Time" }, { title: "Build" }, { title: "Translation" }] });
             })
             .catch(error => {
                 console.error('Error loading or parsing the JSON data:', error);
