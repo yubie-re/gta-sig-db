@@ -2,11 +2,11 @@ name: Update GTA V Signature Database
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs every day at midnight
+    - cron: '0 16 * * *'  # Runs every day at 4pm UTC (12pm EST)
   workflow_dispatch:
   push:
     branches:
-      - main  # Adjust this as necessary for your workflow branches
+      - main 
 
 jobs:
   update-signatures:
