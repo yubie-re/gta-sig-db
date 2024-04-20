@@ -86,6 +86,15 @@
         return "UNK";
     }
 
+    function escapeHtml(unsafe) {
+        return unsafe
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+    }
+
     fetch('https://raw.githubusercontent.com/yubie-re/gta-sig-db/main/sig_db.json')
         .then(response => response.json())
         .then(data => {
@@ -94,10 +103,10 @@
             var rtmaArr = [];
             var integArr = [];
             data['RTMA'].forEach(dat => {
-                rtmaArr.push([String.fromCharCode(dat.m_firstByte) + " - 0x" + dat.m_firstByte.toString(16), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), flagToString(dat.m_protFlags), String(dat.m_moduleSize), timeConverter(dat.time), String(dat.build), '<code>' + (dat.translation || '') + '</code>']);
+                rtmaArr.push([String.fromCharCode(dat.m_firstByte) + " - 0x" + dat.m_firstByte.toString(16), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), flagToString(dat.m_protFlags), String(dat.m_moduleSize), timeConverter(dat.time), String(dat.build), '<code>' + escapeHtml(dat.translation || '') + '</code>']);
             });
             data['INTG'].forEach(dat => {
-                integArr.push([String.fromCharCode(dat.m_firstByte)  + " - 0x" + dat.m_firstByte.toString(16), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), timeConverter(dat.time), String(dat.build), String(dat.build), '<code>' + (dat.translation || '') + '</code>']);
+                integArr.push([String.fromCharCode(dat.m_firstByte)  + " - 0x" + dat.m_firstByte.toString(16), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), timeConverter(dat.time), String(dat.build), String(dat.build), '<code>' + escapeHtml(dat.translation || '') + '</code>']);
             });
             new DataTable('#rtmaTable', { data: rtmaArr, order: [[7, 'desc']], columns: [{ title: "First Byte" }, { title: "Size" }, { title: "Hash" }, { title: "Pg Low" }, { title: "Pg High" }, { title: "Flags" }, { title: "Region Size (KB)" }, { title: "Time" }, { title: "Build" }, { title: "Translation" }] });
             new DataTable('#intgTable', { data: integArr, order: [[4, 'desc']], columns: [{ title: "First Byte" }, { title: "Size" }, { title: "Hash" }, { title: "Pg Low" }, { title: "Pg High" }, { title: "Time" }, { title: "Build" }, { title: "Translation" }] });
