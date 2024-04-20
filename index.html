@@ -34,62 +34,6 @@
         <table id="intgTable" class="table table-striped">
         </table>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.datatables.net/2.0.5/js/dataTables.js"></script>
-    <script src="https://cdn.datatables.net/2.0.5/js/dataTables.bootstrap5.js"></script>
-
-    <script>
-        function timeConverter(unix){
-            var a = new Date(unix * 1000);
-            return a.toISOString().substring(0, 10);  
-        }
-         
-        function flagToString(flag){
-            switch(flag)
-            {
-                case 0x10:
-                    return "X";
-                case 0x20:
-                    return "RX";
-                case 0x40:
-                    return "RWX";
-                case 0x80:
-                    return "RWEC";
-                case 1:
-                    return "NA";
-                case 2:
-                    return "R";
-                case 4:
-                    return "RW";
-                case 8:
-                    return "RC";
-                default:
-                    return "UNK";
-            }
-            return "UNK";
-        }
-
-        fetch('https://raw.githubusercontent.com/yubie-re/gta-sig-db/main/sig_db.json')
-            .then(response => response.json())
-            .then(data => {
-
-                console.log(data);
-                var rtmaArr = [];
-                var integArr = [];
-                data['RTMA'].forEach(dat => {
-                    rtmaArr.push([String(dat.m_firstByte) + " - " + String.fromCharCode(dat.m_firstByte), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), flagToString(dat.m_protFlags), String(dat.m_moduleSize), timeConverter(dat.time), String(dat.build), '<code>' + (dat.translation || '') + '</code>']);
-                });
-                data['INTG'].forEach(dat => {
-                    integArr.push([String(dat.m_firstByte) + " - " + String.fromCharCode(dat.m_firstByte), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), timeConverter(dat.time), String(dat.build), String(dat.build), '<code>' + (dat.translation || '') + '</code>']);
-                });
-                new DataTable('#rtmaTable', { data: rtmaArr,  order: [[7, 'desc']], columns: [{ title: "First Byte" }, { title: "Size" }, { title: "Hash" }, { title: "Pg Low" }, { title: "Pg High" }, { title: "Flags" }, { title: "Region Size (KB)" }, { title: "Time" }, { title: "Build" }, { title: "Translation" }] });
-                new DataTable('#intgTable', { data: integArr,  order: [[4, 'desc']], columns: [{ title: "First Byte" }, { title: "Size" }, { title: "Hash" }, { title: "Pg Low" }, { title: "Pg High" }, { title: "Time" }, { title: "Build" }, { title: "Translation" }] });
-            })
-            .catch(error => {
-                console.error('Error loading or parsing the JSON data:', error);
-                alert('Failed to load JSON data: ' + error.message);
-            });
-    </script>
 </body>
 
 <footer>
@@ -107,5 +51,61 @@
         </footer>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.datatables.net/2.0.5/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.0.5/js/dataTables.bootstrap5.js"></script>
+
+<script>
+    function timeConverter(unix) {
+        var a = new Date(unix * 1000);
+        return a.toISOString().substring(0, 10);
+    }
+
+    function flagToString(flag) {
+        switch (flag) {
+            case 0x10:
+                return "X";
+            case 0x20:
+                return "RX";
+            case 0x40:
+                return "RWX";
+            case 0x80:
+                return "RWXC";
+            case 1:
+                return "NA";
+            case 2:
+                return "R";
+            case 4:
+                return "RW";
+            case 8:
+                return "RC";
+            default:
+                return "UNK";
+        }
+        return "UNK";
+    }
+
+    fetch('https://raw.githubusercontent.com/yubie-re/gta-sig-db/main/sig_db.json')
+        .then(response => response.json())
+        .then(data => {
+
+            console.log(data);
+            var rtmaArr = [];
+            var integArr = [];
+            data['RTMA'].forEach(dat => {
+                rtmaArr.push([String.fromCharCode(dat.m_firstByte) + " - 0x" + dat.m_firstByte.toString(16), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), flagToString(dat.m_protFlags), String(dat.m_moduleSize), timeConverter(dat.time), String(dat.build), '<code>' + (dat.translation || '') + '</code>']);
+            });
+            data['INTG'].forEach(dat => {
+                integArr.push([String.fromCharCode(dat.m_firstByte)  + " - 0x" + dat.m_firstByte.toString(16), String(dat.m_len), String(dat.m_hash), String(dat.m_pageLow), String(dat.m_pageHigh), timeConverter(dat.time), String(dat.build), String(dat.build), '<code>' + (dat.translation || '') + '</code>']);
+            });
+            new DataTable('#rtmaTable', { data: rtmaArr, order: [[7, 'desc']], columns: [{ title: "First Byte" }, { title: "Size" }, { title: "Hash" }, { title: "Pg Low" }, { title: "Pg High" }, { title: "Flags" }, { title: "Region Size (KB)" }, { title: "Time" }, { title: "Build" }, { title: "Translation" }] });
+            new DataTable('#intgTable', { data: integArr, order: [[4, 'desc']], columns: [{ title: "First Byte" }, { title: "Size" }, { title: "Hash" }, { title: "Pg Low" }, { title: "Pg High" }, { title: "Time" }, { title: "Build" }, { title: "Translation" }] });
+        })
+        .catch(error => {
+            console.error('Error loading or parsing the JSON data:', error);
+            alert('Failed to load JSON data: ' + error.message);
+        });
+</script>
 
 </html>
