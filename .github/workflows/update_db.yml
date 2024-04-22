@@ -42,7 +42,7 @@ jobs:
         working-directory: gtav-sigscan
 
       - name: Checkout the gta-sig-db repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           path: gta-sig-db
 
