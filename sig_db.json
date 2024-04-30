@@ -462,6 +462,73 @@
             "time": 1714061673,
             "build": 3179,
             "translation": "gh/YimMenu/Tran"
+        },
+        {
+            "m_firstByte": 101,
+            "m_len": 16,
+            "m_hash": 4204328590,
+            "m_pageLow": 135,
+            "m_pageHigh": 139,
+            "m_protFlags": 2,
+            "m_moduleSize": 2896,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1714493702,
+            "build": 3179
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 10,
+            "m_hash": 1923597101,
+            "m_pageLow": 22,
+            "m_pageHigh": 32,
+            "m_protFlags": 2,
+            "m_moduleSize": 680,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1714493702,
+            "build": 3179,
+            "translation": "HotLawless"
+        },
+        {
+            "m_firstByte": 65,
+            "m_len": 14,
+            "m_hash": 1391222213,
+            "m_pageLow": 806,
+            "m_pageHigh": 816,
+            "m_protFlags": 4,
+            "m_moduleSize": 3300,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1714493702,
+            "build": 3179,
+            "translation": "Attach to Bone"
+        },
+        {
+            "m_firstByte": 65,
+            "m_len": 16,
+            "m_hash": 712860507,
+            "m_pageLow": 33,
+            "m_pageHigh": 37,
+            "m_protFlags": 2,
+            "m_moduleSize": 224,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1714493702,
+            "build": 3179
+        },
+        {
+            "m_firstByte": 68,
+            "m_len": 16,
+            "m_hash": 200769857,
+            "m_pageLow": 12,
+            "m_pageHigh": 16,
+            "m_protFlags": 2,
+            "m_moduleSize": 180,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1714493702,
+            "build": 3179
         }
     ],
     "INTG": []
