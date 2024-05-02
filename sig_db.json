@@ -529,6 +529,47 @@
             "m_unk2": 1,
             "time": 1714493702,
             "build": 3179
+        },
+        {
+            "m_firstByte": 67,
+            "m_len": 11,
+            "m_hash": 2139861600,
+            "m_pageLow": 1002,
+            "m_pageHigh": 1003,
+            "m_protFlags": 2,
+            "m_moduleSize": 5112,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1714666421,
+            "build": 3179,
+            "translation": "Cherax adds"
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 64,
+            "m_hash": 1700828204,
+            "m_pageLow": 3671,
+            "m_pageHigh": 3735,
+            "m_protFlags": 64,
+            "m_moduleSize": 23384,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1714666421,
+            "build": 3179,
+            "translation": "V\u0000a\u0000l\u0000i\u0000d\u0000a\u0000t\u0000i\u0000n\u0000g\u0000 \u0000y\u0000o\u0000u\u0000r\u0000 \u0000a\u0000c\u0000t\u0000i\u0000v\u0000a\u0000t\u0000i\u0000o\u0000n\u0000 \u0000k\u0000e\u0000y\u0000.\u0000.\u0000"
+        },
+        {
+            "m_firstByte": 77,
+            "m_len": 8,
+            "m_hash": 3351546331,
+            "m_pageLow": 1989,
+            "m_pageHigh": 1993,
+            "m_protFlags": 64,
+            "m_moduleSize": 10272,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1714666421,
+            "build": 3179
         }
     ],
     "INTG": []
