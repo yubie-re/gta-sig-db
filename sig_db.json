@@ -677,6 +677,59 @@
             "m_unk2": 1,
             "time": 1715098391,
             "build": 3179
+        },
+        {
+            "m_firstByte": 82,
+            "m_len": 17,
+            "m_hash": 930247803,
+            "m_pageLow": 50,
+            "m_pageHigh": 116,
+            "m_protFlags": 2,
+            "m_moduleSize": 904,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1715271241,
+            "build": 3179
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 14,
+            "m_hash": 3459756801,
+            "m_pageLow": 0,
+            "m_pageHigh": 3,
+            "m_protFlags": 2,
+            "m_moduleSize": 764,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1715271241,
+            "build": 3179
+        },
+        {
+            "m_firstByte": 87,
+            "m_len": 8,
+            "m_hash": 2119653361,
+            "m_pageLow": 17,
+            "m_pageHigh": 21,
+            "m_protFlags": 2,
+            "m_moduleSize": 188,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1715271241,
+            "build": 3179
+        },
+        {
+            "m_firstByte": 89,
+            "m_len": 10,
+            "m_hash": 4272573058,
+            "m_pageLow": 199,
+            "m_pageHigh": 203,
+            "m_protFlags": 2,
+            "m_moduleSize": 1636,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1715271241,
+            "build": 3179,
+            "translation": "YimMenu\u0000ap"
         }
     ],
     "INTG": []
