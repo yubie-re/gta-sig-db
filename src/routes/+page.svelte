@@ -48,7 +48,7 @@
 
     onMount(async () => {
         try {
-            const response = await fetch('https://raw.githubusercontent.com/yubie-re/gta-sig-db/main/sig_db.json');
+            const response = await fetch('https://raw.githubusercontent.com/yubie-re/gta-sig-db/main/sig-workflow/sig_db.json');
             const data: { RTMA: SignatureData[]; INTG: SignatureData[] } = await response.json();
 
             if (data.RTMA) {

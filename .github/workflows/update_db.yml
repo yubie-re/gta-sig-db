@@ -53,7 +53,7 @@ jobs:
 
       - name: Copy new signatures to gta-sig-db and deduplicate
         run: |
-          cp ../gtav-sigscan/signatures.json ./signatures.json
+          cp .../gtav-sigscan/signatures.json ./signatures.json
           python ./update_signatures.py
         working-directory: gta-sig-db/sig-workflow
 
