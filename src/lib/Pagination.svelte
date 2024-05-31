@@ -33,5 +33,5 @@
 </script>
 
 <section class=" h-10 hidden lg:block">
-    <Paginator bind:settings={paginationSettings} on:page={onPageChange} on:amount={onCountChange} showNumerals maxNumerals={1} controlVariant="variant-ghost-tertiary" active="bg-gradient-to-br  variant-gradient-primary-secondary"></Paginator>
+    <Paginator bind:settings={paginationSettings} on:page={onPageChange} on:amount={onCountChange} showNumerals maxNumerals={1} controlVariant="variant-ghost-tertiary" active="variant-filled-primary"></Paginator>
 </section>
