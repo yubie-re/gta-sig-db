@@ -90,9 +90,9 @@
 
 <svelte:head>
     <title>GTA 5 Anticheat Signature Database - View Anticheat Data & Research</title>
-    <meta name="description" content="Search through GTA 5 anticheat signatues here. Grand Theft Auto V cheat signatures can be looked through for security research purposes.">
+    <meta name="description" content="Search through GTA 5 anticheat signatures here. Big database of anticheat data dating back to 04/18/2024.">
     <meta property="og:title" content="GTA 5 Anticheat Signature Database - View Anticheat Data & Research">
-    <meta property="og:description" content="Search through GTA 5 anticheat signatues here. Grand Theft Auto V cheat signatures can be looked through for security research purposes.">
+    <meta property="og:description" content="Search through GTA 5 anticheat signatures here. Big database of anticheat data dating back to 04/18/2024.">
     <meta property="og:url" content="https://yubie-re.github.io/gta-sig-db/">
 </svelte:head>
 
