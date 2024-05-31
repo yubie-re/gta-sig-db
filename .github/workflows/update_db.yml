@@ -54,14 +54,14 @@ jobs:
       - name: Copy new signatures to gta-sig-db and deduplicate
         run: |
           cp ../gtav-sigscan/signatures.json ./signatures.json
-          python update_signatures.py
-        working-directory: gta-sig-db
+          python ./update_signatures.py
+        working-directory: gta-sig-db/sig-workflow
 
       - name: Commit and push changes if there are updates
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add sig_db.json
+          git add sig-workflow/sig_db.json
           if git diff --staged --quiet; then
             echo "No changes to sig_db.json"
           else
