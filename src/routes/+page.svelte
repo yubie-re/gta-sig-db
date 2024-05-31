@@ -5,6 +5,7 @@
     import type { SignatureData, ProcessedSignature } from './+page';
     import RtmaDatatable from '$lib/RTMADatatable.svelte';
     import IntgDatatable from '$lib/INTGDatatable.svelte';
+    import IconAccessibility from '~icons/mdi/github'
 
     let rtmaData: ProcessedSignature[] = [];
     let intgData: ProcessedSignature[] = [];
@@ -100,7 +101,7 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Rockstar_Games_Logo.svg/835px-Rockstar_Games_Logo.svg.png" class="h-10 w-10" alt="Logo"/>
     </svelte:fragment>
     <h3 class="h3">GTA 5 Anticheat Signature Database</h3>
-    <svelte:fragment slot="trail">(actions)</svelte:fragment>
+    <svelte:fragment slot="trail"><a href="https://github.com/yubie-re/gta-sig-db"><IconAccessibility class="text-2xl" href="https://github.com/yubie-re/gta-sig-db"/></a></svelte:fragment>
 </AppBar>
 
 <div class="container-xl p-6">
