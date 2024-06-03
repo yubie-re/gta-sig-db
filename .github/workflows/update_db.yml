@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the gtav-sigscan tool
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: yubie-re/gtav-sigscan
           path: gtav-sigscan
