@@ -7,12 +7,10 @@
 	const rows = handler.getRows();
 </script>
 
-<div class=" overflow-x-auto space-y-4">
-	<header class="flex justify-between gap-4">
-		<Search {handler} />
-	</header>
-	<table class="table table-hover table-compact w-full table-auto">
-		<thead>
+<Search {handler} />
+<div class="overflow-x-auto space-y-4 py-4">
+    <table class="table table-hover table-compact w-full table-auto">
+        <thead>
             <tr>
                 <ThSort {handler} orderBy="firstByte">First Byte</ThSort>
                 <ThSort {handler} orderBy="size">Size</ThSort>
@@ -40,9 +38,10 @@
             </tr>
             {/each}
         </tbody>
-	</table>
-	<footer class="flex justify-between">
-		<RowCount {handler} />
-		<Pagination {handler} />
-	</footer>
+    </table>
 </div>
+
+<footer class="flex md:justify-between justify-center">
+    <RowCount {handler} />
+    <Pagination {handler} />
+</footer>
