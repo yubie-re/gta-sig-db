@@ -1243,6 +1243,46 @@
             "time": 1717690500,
             "build": 3179,
             "translation": "Who Rebound"
+        },
+        {
+            "m_firstByte": 83,
+            "m_len": 9,
+            "m_hash": 2424254309,
+            "m_pageLow": 56,
+            "m_pageHigh": 60,
+            "m_protFlags": 2,
+            "m_moduleSize": 560,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1718036147,
+            "build": 3179
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 42,
+            "m_hash": 1934530294,
+            "m_pageLow": 3800,
+            "m_pageHigh": 3865,
+            "m_protFlags": 64,
+            "m_moduleSize": 23972,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1718036147,
+            "build": 3179,
+            "translation": "V\u0000a\u0000l\u0000i\u0000d\u0000a\u0000t\u0000i\u0000n\u0000g\u0000 \u0000y\u0000o\u0000u\u0000r\u0000 \u0000a\u0000c\u0000t\u0000i\u0000v\u0000"
+        },
+        {
+            "m_firstByte": 66,
+            "m_len": 13,
+            "m_hash": 4208316260,
+            "m_pageLow": 22,
+            "m_pageHigh": 26,
+            "m_protFlags": 2,
+            "m_moduleSize": 172,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1718036147,
+            "build": 3179
         }
     ],
     "INTG": []
