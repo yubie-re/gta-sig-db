@@ -1283,6 +1283,73 @@
             "m_unk2": 1,
             "time": 1718036147,
             "build": 3179
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 40,
+            "m_hash": 1333126384,
+            "m_pageLow": 3800,
+            "m_pageHigh": 3870,
+            "m_protFlags": 64,
+            "m_moduleSize": 23992,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1718295404,
+            "build": 3179,
+            "translation": "V\u0000a\u0000l\u0000i\u0000d\u0000a\u0000t\u0000i\u0000n\u0000g\u0000 \u0000y\u0000o\u0000u\u0000r\u0000 \u0000a\u0000c\u0000t\u0000i\u0000"
+        },
+        {
+            "m_firstByte": 76,
+            "m_len": 13,
+            "m_hash": 2510307115,
+            "m_pageLow": 653,
+            "m_pageHigh": 657,
+            "m_protFlags": 64,
+            "m_moduleSize": 3432,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1718295404,
+            "build": 3179
+        },
+        {
+            "m_firstByte": 76,
+            "m_len": 11,
+            "m_hash": 3193690661,
+            "m_pageLow": 994,
+            "m_pageHigh": 995,
+            "m_protFlags": 2,
+            "m_moduleSize": 5184,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1718295404,
+            "build": 3179,
+            "translation": "ListGuiDesc"
+        },
+        {
+            "m_firstByte": 77,
+            "m_len": 10,
+            "m_hash": 864008140,
+            "m_pageLow": 17,
+            "m_pageHigh": 21,
+            "m_protFlags": 2,
+            "m_moduleSize": 196,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1718295404,
+            "build": 3179
+        },
+        {
+            "m_firstByte": 80,
+            "m_len": 13,
+            "m_hash": 1354965622,
+            "m_pageLow": 0,
+            "m_pageHigh": 3,
+            "m_protFlags": 2,
+            "m_moduleSize": 96,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1718295404,
+            "build": 3179
         }
     ],
     "INTG": []
