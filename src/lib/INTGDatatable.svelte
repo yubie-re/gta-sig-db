@@ -17,7 +17,6 @@
                 <ThSort {handler} orderBy="hash">Hash</ThSort>
                 <ThSort {handler} orderBy="pageLow">Page Low</ThSort>
                 <ThSort {handler} orderBy="pageHigh">Page High</ThSort>
-                <ThSort {handler} orderBy="flags">Flags</ThSort>
                 <ThSort {handler} orderBy="time">Time</ThSort>
                 <ThSort {handler} orderBy="build">Build</ThSort>
                 <ThSort {handler} orderBy="translation">Translation</ThSort>
@@ -31,7 +30,6 @@
                 <td>{row.hash}</td>
                 <td>{row.pageLow}</td>
                 <td>{row.pageHigh}</td>
-                <td>{row.flags}</td>
                 <td>{row.time}</td>
                 <td>{row.build}</td>
                 <td><code>{row.translation}</code></td>
