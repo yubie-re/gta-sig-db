@@ -2171,6 +2171,72 @@
             "time": 1720714508,
             "build": 3258,
             "translation": "YimMenu/raw/ma"
+        },
+        {
+            "m_firstByte": 110,
+            "m_len": 17,
+            "m_hash": 4117086430,
+            "m_pageLow": 250,
+            "m_pageHigh": 254,
+            "m_protFlags": 2,
+            "m_moduleSize": 1836,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1721319220,
+            "build": 3274,
+            "translation": "ntent.com/YimMenu"
+        },
+        {
+            "m_firstByte": 87,
+            "m_len": 12,
+            "m_hash": 2692736605,
+            "m_pageLow": 7,
+            "m_pageHigh": 11,
+            "m_protFlags": 2,
+            "m_moduleSize": 144,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1721319220,
+            "build": 3274
+        },
+        {
+            "m_firstByte": 77,
+            "m_len": 13,
+            "m_hash": 3268916125,
+            "m_pageLow": 1,
+            "m_pageHigh": 4,
+            "m_protFlags": 2,
+            "m_moduleSize": 208,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1721319220,
+            "build": 3274
+        },
+        {
+            "m_firstByte": 76,
+            "m_len": 17,
+            "m_hash": 2690375,
+            "m_pageLow": 678,
+            "m_pageHigh": 682,
+            "m_protFlags": 64,
+            "m_moduleSize": 3544,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1721319220,
+            "build": 3274
+        },
+        {
+            "m_firstByte": 66,
+            "m_len": 14,
+            "m_hash": 2653557581,
+            "m_pageLow": 1,
+            "m_pageHigh": 4,
+            "m_protFlags": 2,
+            "m_moduleSize": 148,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1721319220,
+            "build": 3274
         }
     ],
     "INTG": [
@@ -2233,6 +2299,66 @@
             "time": 1719418383,
             "build": 3258,
             "translation": "(Hex) { b9 00 10 04 00 8d 82 ff ff 01 00 }"
+        },
+        {
+            "m_firstByte": 185,
+            "m_len": 11,
+            "m_hash": 418636188,
+            "m_pageLow": 6641,
+            "m_pageHigh": 6645,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1721319220,
+            "build": 3274,
+            "translation": "(Hex) { b9 00 10 04 00 8d 82 ff ff 01 00 }"
+        },
+        {
+            "m_firstByte": 64,
+            "m_len": 10,
+            "m_hash": 1832462157,
+            "m_pageLow": 1091,
+            "m_pageHigh": 1095,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1721319220,
+            "build": 3274,
+            "translation": "(Hex) { 40 53 48 83 ec 20 80 79 6b 00 }"
+        },
+        {
+            "m_firstByte": 199,
+            "m_len": 8,
+            "m_hash": 2324167865,
+            "m_pageLow": 1011,
+            "m_pageHigh": 1015,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1721319220,
+            "build": 3274,
+            "translation": "(Hex) { c7 81 fc 3a 00 00 ff ff }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 16,
+            "m_hash": 3467914479,
+            "m_pageLow": 4895,
+            "m_pageHigh": 4899,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1721319220,
+            "build": 3274,
+            "translation": "(Hex) { 48 8b c4 48 81 ec b8 00 00 00 0f 29 70 e8 f3 0f }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 13,
+            "m_hash": 1294404679,
+            "m_pageLow": 2692,
+            "m_pageHigh": 2696,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1721319220,
+            "build": 3274,
+            "translation": "(Hex) { 48 89 5c 24 08 57 48 83 ec 20 81 f9 6d }"
         }
     ]
 }
