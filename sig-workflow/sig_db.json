@@ -2874,6 +2874,72 @@
             "m_unk2": 1,
             "time": 1723133717,
             "build": 3274
+        },
+        {
+            "m_firstByte": 82,
+            "m_len": 12,
+            "m_hash": 1907660059,
+            "m_pageLow": 975,
+            "m_pageHigh": 1038,
+            "m_protFlags": 2,
+            "m_moduleSize": 4152,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1723824986,
+            "build": 3274
+        },
+        {
+            "m_firstByte": 98,
+            "m_len": 12,
+            "m_hash": 2886313345,
+            "m_pageLow": 236,
+            "m_pageHigh": 240,
+            "m_protFlags": 2,
+            "m_moduleSize": 1872,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1723824986,
+            "build": 3274
+        },
+        {
+            "m_firstByte": 77,
+            "m_len": 13,
+            "m_hash": 3185028030,
+            "m_pageLow": 1,
+            "m_pageHigh": 4,
+            "m_protFlags": 2,
+            "m_moduleSize": 252,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1723824986,
+            "build": 3274
+        },
+        {
+            "m_firstByte": 77,
+            "m_len": 6,
+            "m_hash": 3118326089,
+            "m_pageLow": 2349,
+            "m_pageHigh": 2353,
+            "m_protFlags": 64,
+            "m_moduleSize": 11060,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1723824986,
+            "build": 3274
+        },
+        {
+            "m_firstByte": 83,
+            "m_len": 23,
+            "m_hash": 307850294,
+            "m_pageLow": 4370,
+            "m_pageHigh": 4440,
+            "m_protFlags": 64,
+            "m_moduleSize": 24664,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1723824986,
+            "build": 3274,
+            "translation": "Stand>Settings>Language"
         }
     ],
     "INTG": [
