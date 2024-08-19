@@ -2940,6 +2940,46 @@
             "time": 1723824986,
             "build": 3274,
             "translation": "Stand>Settings>Language"
+        },
+        {
+            "m_firstByte": 76,
+            "m_len": 10,
+            "m_hash": 77736029,
+            "m_pageLow": 427,
+            "m_pageHigh": 431,
+            "m_protFlags": 2,
+            "m_moduleSize": 1764,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1724084144,
+            "build": 3274
+        },
+        {
+            "m_firstByte": 89,
+            "m_len": 10,
+            "m_hash": 2087524729,
+            "m_pageLow": 360,
+            "m_pageHigh": 364,
+            "m_protFlags": 2,
+            "m_moduleSize": 1872,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1724084144,
+            "build": 3274,
+            "translation": "YimMenu.pd"
+        },
+        {
+            "m_firstByte": 65,
+            "m_len": 14,
+            "m_hash": 2929987870,
+            "m_pageLow": 121,
+            "m_pageHigh": 125,
+            "m_protFlags": 2,
+            "m_moduleSize": 2548,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1724084144,
+            "build": 3274
         }
     ],
     "INTG": [
