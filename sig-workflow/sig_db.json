@@ -2980,6 +2980,45 @@
             "m_unk2": 1,
             "time": 1724084144,
             "build": 3274
+        },
+        {
+            "m_firstByte": 71,
+            "m_len": 22,
+            "m_hash": 448237073,
+            "m_pageLow": 310,
+            "m_pageHigh": 314,
+            "m_protFlags": 2,
+            "m_moduleSize": 1308,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1724343347,
+            "build": 3274
+        },
+        {
+            "m_firstByte": 112,
+            "m_len": 12,
+            "m_hash": 1267477800,
+            "m_pageLow": 234,
+            "m_pageHigh": 238,
+            "m_protFlags": 2,
+            "m_moduleSize": 2108,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1724343347,
+            "build": 3274
+        },
+        {
+            "m_firstByte": 109,
+            "m_len": 11,
+            "m_hash": 324985550,
+            "m_pageLow": 2178,
+            "m_pageHigh": 2182,
+            "m_protFlags": 64,
+            "m_moduleSize": 11048,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1724343347,
+            "build": 3274
         }
     ],
     "INTG": [
