@@ -2633,7 +2633,8 @@
             "m_unk1": 1,
             "m_unk2": 1,
             "time": 1722528925,
-            "build": 3274
+            "build": 3274,
+            "translation": ".json file from YimMenu repo."
         },
         {
             "m_firstByte": 102,
@@ -2899,7 +2900,8 @@
             "m_unk1": 1,
             "m_unk2": 1,
             "time": 1723824986,
-            "build": 3274
+            "build": 3274,
+            "translation": "but this Yim"
         },
         {
             "m_firstByte": 77,
