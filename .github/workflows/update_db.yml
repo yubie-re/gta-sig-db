@@ -26,8 +26,8 @@ jobs:
 
       - name: Download the gtav-sigscan tool
         run: |
-          mkdir ./build/src
-          cd ./build/src
+          mkdir -p build/src
+          cd build/src
           latest_url=$(curl -s https://api.github.com/repos/yubie-re/gtav-sigscan/releases/latest | grep "browser_download_url.*sigscan-linux.elf" | cut -d : -f 2,3 | tr -d \")
           curl -L -o sigscan-linux.elf $latest_url
           chmod +x sigscan-linux.elf
