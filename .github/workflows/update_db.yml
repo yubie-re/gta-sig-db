@@ -24,7 +24,7 @@ jobs:
                   latest_url=$(curl -s https://api.github.com/repos/yubie-re/gtav-sigscan/releases/latest | grep "browser_download_url.*sigscan-linux.elf" | cut -d : -f 2,3 | tr -d \")
                   curl -L -o gtav-sigscan/build/src/sigscan-linux.elf $latest_url
                   chmod +x gtav-sigscan/build/src/sigscan-linux.elf
-                  gtav-sigscan/build/src/sigscan-linux.elf -savejson > /dev/null 2>&1
+                  gtav-sigscan/build/src/sigscan-linux.elf -s ./signatures.json -z
 
             - name: Upload signature JSON artifact
               uses: actions/upload-artifact@v4
