@@ -15,8 +15,8 @@ jobs:
         steps:
             - name: Checkout gta5-sig-samples repository
               run: |
-                  git clone https://x-access-token:${{ secrets.GTA_SAMPLE_PAT }}@github.com/yubie-re/gta5-sig-samples.git gtav-sigscan/files
-                  rm -rf gtav-sigscan/files/.git
+                  git clone https://x-access-token:${{ secrets.GTA_SAMPLE_PAT }}@github.com/yubie-re/gta5-sig-samples.git files
+                  rm -rf files/.git
 
             - name: Download and run GTA5Sigscan
               run: |
