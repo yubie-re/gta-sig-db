@@ -12,31 +12,23 @@ jobs:
   update-signatures:
     runs-on: ubuntu-latest
     steps:
-      - name: Install curl
+      - name: Setup & Run GTA5Sigscan
         run: |
-          sudo apt-get update
-          sudo apt-get install -y curl
           mkdir gtav-sigscan
-
-      - name: Clone private repository using PAT
-        run: |
           git clone https://x-access-token:${{ secrets.GTA_SAMPLE_PAT }}@github.com/yubie-re/gta5-sig-samples.git files
           rm -rf files/.git
-        working-directory: gtav-sigscan
-
-      - name: Download the gtav-sigscan tool
-        run: |
           mkdir -p build/src
           cd build/src
           latest_url=$(curl -s https://api.github.com/repos/yubie-re/gtav-sigscan/releases/latest | grep "browser_download_url.*sigscan-linux.elf" | cut -d : -f 2,3 | tr -d \")
           curl -L -o sigscan-linux.elf $latest_url
           chmod +x sigscan-linux.elf
-        working-directory: gtav-sigscan
-
-      - name: Run the gtav-sigscan tool to generate new signatures
-        run: |
           ./build/src/sigscan-linux.elf -savejson > /dev/null 2>&1
         working-directory: gtav-sigscan
+
+      - name: Upload signature json artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: gtav-sigscan/signatures.json
 
       - name: Checkout the gta-sig-db repository
         uses: actions/checkout@v4
@@ -47,10 +39,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.9'
-      - name: Upload signature json standalone
-        uses: actions/upload-artifact@v4
-        with:
-          path: gtav-sigscan/signatures.json
 
       - name: Copy new signatures to gta-sig-db and deduplicate
         run: |
