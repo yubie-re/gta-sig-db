@@ -1,60 +1,60 @@
 name: Update GTA V Signature Database
 
 on:
-  schedule:
-    - cron: '0 16 * * *'  # Runs every day at 4pm UTC (12pm EST)
-  workflow_dispatch:
-  push:
-    branches:
-      - main 
+    schedule:
+        - cron: "0 16 * * *" # Runs every day at 4pm UTC (12pm EST)
+    workflow_dispatch:
+    push:
+        branches:
+            - main
 
 jobs:
-  update-signatures:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Setup & Run GTA5Sigscan
-        run: |
-          mkdir gtav-sigscan
-          cd gtav-sigscan
-          git clone https://x-access-token:${{ secrets.GTA_SAMPLE_PAT }}@github.com/yubie-re/gta5-sig-samples.git files
-          rm -rf files/.git
-          mkdir -p build/src
-          cd build/src
-          latest_url=$(curl -s https://api.github.com/repos/yubie-re/gtav-sigscan/releases/latest | grep "browser_download_url.*sigscan-linux.elf" | cut -d : -f 2,3 | tr -d \")
-          curl -L -o sigscan-linux.elf $latest_url
-          chmod +x sigscan-linux.elf
-          ./build/src/sigscan-linux.elf -savejson > /dev/null 2>&1
+    update-signatures:
+        runs-on: ubuntu-latest
 
-      - name: Upload signature json artifact
-        uses: actions/upload-artifact@v4
-        with:
-          path: gtav-sigscan/signatures.json
+        steps:
+            - name: Checkout gta5-sig-samples repository
+              run: |
+                  git clone https://x-access-token:${{ secrets.GTA_SAMPLE_PAT }}@github.com/yubie-re/gta5-sig-samples.git gtav-sigscan/files
+                  rm -rf gtav-sigscan/files/.git
 
-      - name: Checkout the gta-sig-db repository
-        uses: actions/checkout@v4
-        with:
-          path: gta-sig-db
+            - name: Download and run GTA5Sigscan
+              run: |
+                  mkdir -p gtav-sigscan/build/src
+                  latest_url=$(curl -s https://api.github.com/repos/yubie-re/gtav-sigscan/releases/latest | grep "browser_download_url.*sigscan-linux.elf" | cut -d : -f 2,3 | tr -d \")
+                  curl -L -o gtav-sigscan/build/src/sigscan-linux.elf $latest_url
+                  chmod +x gtav-sigscan/build/src/sigscan-linux.elf
+                  gtav-sigscan/build/src/sigscan-linux.elf -savejson > /dev/null 2>&1
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.9'
+            - name: Upload signature JSON artifact
+              uses: actions/upload-artifact@v4
+              with:
+                  path: gtav-sigscan/signatures.json
 
-      - name: Copy new signatures to gta-sig-db and deduplicate
-        run: |
-          cp ../../gtav-sigscan/signatures.json ./signatures.json
-          python ./update_signatures.py
-        working-directory: gta-sig-db/sig-workflow
+            - name: Checkout gta-sig-db repository
+              uses: actions/checkout@v4
+              with:
+                  path: gta-sig-db
 
-      - name: Commit and push changes if there are updates
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add sig-workflow/sig_db.json
-          if git diff --staged --quiet; then
-            echo "No changes to sig_db.json"
-          else
-            git commit -m "Update sig_db.json with new data"
-            git push https://${{ secrets.GITHUB_TOKEN }}@github.com/yubie-re/gta-sig-db.git
-          fi
-        working-directory: gta-sig-db
+            - name: Setup Python
+              uses: actions/setup-python@v5
+              with:
+                  python-version: "3.9"
+
+            - name: Copy new signatures to gta-sig-db and deduplicate
+              run: |
+                  cp gtav-sigscan/signatures.json gta-sig-db/sig-workflow/signatures.json
+                  python gta-sig-db/sig-workflow/update_signatures.py
+
+            - name: Commit and push changes if there are updates
+              run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+                  git add sig-workflow/sig_db.json
+                  if git diff --staged --quiet; then
+                    echo "No changes to sig_db.json"
+                  else
+                    git commit -m "Update sig_db.json with new data"
+                    git push https://${{ secrets.GITHUB_TOKEN }}@github.com/yubie-re/gta-sig-db.git
+                  fi
+              working-directory: gta-sig-db
