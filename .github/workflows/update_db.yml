@@ -15,6 +15,7 @@ jobs:
       - name: Setup & Run GTA5Sigscan
         run: |
           mkdir gtav-sigscan
+          cd gtav-sigscan
           git clone https://x-access-token:${{ secrets.GTA_SAMPLE_PAT }}@github.com/yubie-re/gta5-sig-samples.git files
           rm -rf files/.git
           mkdir -p build/src
@@ -23,7 +24,6 @@ jobs:
           curl -L -o sigscan-linux.elf $latest_url
           chmod +x sigscan-linux.elf
           ./build/src/sigscan-linux.elf -savejson > /dev/null 2>&1
-        working-directory: gtav-sigscan
 
       - name: Upload signature json artifact
         uses: actions/upload-artifact@v4
