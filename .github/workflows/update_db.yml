@@ -12,16 +12,10 @@ jobs:
   update-signatures:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the gtav-sigscan tool
-        uses: actions/checkout@v4
-        with:
-          repository: yubie-re/gtav-sigscan
-          path: gtav-sigscan
-
-      - name: Install C++ compiler and CMake
+      - name: Install curl
         run: |
           sudo apt-get update
-          sudo apt-get install -y g++ cmake ninja-build
+          sudo apt-get install -y curl
 
       - name: Clone private repository using PAT
         run: |
@@ -29,16 +23,18 @@ jobs:
           rm -rf files/.git
         working-directory: gtav-sigscan
 
-      - name: Build the gtav-sigscan tool
+      - name: Download the gtav-sigscan tool
         run: |
-          cd gtav-sigscan
-          cmake -S . -B build -G Ninja
-          cmake --build build
-
+          mkdir build/src
+          cd build/src
+          latest_url=$(curl -s https://api.github.com/repos/yubie-re/gtav-sigscan/releases/latest | grep "browser_download_url.*sigscan-linux.elf" | cut -d : -f 2,3 | tr -d \")
+          curl -L -o sigscan-linux.elf $latest_url
+          chmod +x sigscan-linux.elf
+        working-directory: gtav-sigscan
 
       - name: Run the gtav-sigscan tool to generate new signatures
         run: |
-          ./build/src/sigscan -savejson > /dev/null 2>&1
+          ./build/src/sigscan-linux.elf -savejson > /dev/null 2>&1
         working-directory: gtav-sigscan
 
       - name: Checkout the gta-sig-db repository
