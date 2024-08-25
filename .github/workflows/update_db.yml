@@ -29,6 +29,7 @@ jobs:
             - name: Upload signature JSON artifact
               uses: actions/upload-artifact@v4
               with:
+                  name: signatures.json
                   path: signatures.json
 
             - name: Checkout gta-sig-db repository
