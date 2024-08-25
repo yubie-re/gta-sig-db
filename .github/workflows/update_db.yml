@@ -45,7 +45,7 @@ jobs:
               run: |
                   cp signatures.json gta-sig-db/sig-workflow/signatures.json
                   cd gta-sig-db/sig-workflow
-                  python gta-sig-db/sig-workflow/update_signatures.py
+                  python update_signatures.py
 
             - name: Commit and push changes if there are updates
               run: |
