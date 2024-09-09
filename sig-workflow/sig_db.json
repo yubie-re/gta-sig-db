@@ -3317,6 +3317,72 @@
             "build": 3274,
             "m_protFlags": 32,
             "m_moduleSize": 9120
+        },
+        {
+            "m_firstByte": 119,
+            "m_len": 11,
+            "m_hash": 1275906356,
+            "m_pageLow": 66,
+            "m_pageHigh": 70,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1725898249,
+            "build": 3274,
+            "m_protFlags": 2,
+            "m_moduleSize": 460
+        },
+        {
+            "m_firstByte": 98,
+            "m_len": 16,
+            "m_hash": 4128073612,
+            "m_pageLow": 35,
+            "m_pageHigh": 36,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1725898249,
+            "build": 3274,
+            "m_protFlags": 2,
+            "m_moduleSize": 600
+        },
+        {
+            "m_firstByte": 77,
+            "m_len": 14,
+            "m_hash": 2015850595,
+            "m_pageLow": 12,
+            "m_pageHigh": 16,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1725898249,
+            "build": 3274,
+            "m_protFlags": 2,
+            "m_moduleSize": 208
+        },
+        {
+            "m_firstByte": 97,
+            "m_len": 17,
+            "m_hash": 3888474581,
+            "m_pageLow": 0,
+            "m_pageHigh": 2,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1725898249,
+            "build": 3274,
+            "m_protFlags": 2,
+            "m_moduleSize": 172
+        },
+        {
+            "m_firstByte": 115,
+            "m_len": 20,
+            "m_hash": 2295148318,
+            "m_pageLow": 84,
+            "m_pageHigh": 88,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1725898249,
+            "build": 3274,
+            "translation": "supported in YimMenu",
+            "m_protFlags": 2,
+            "m_moduleSize": 1880
         }
     ],
     "INTG": [
