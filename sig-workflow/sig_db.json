@@ -3383,6 +3383,45 @@
             "translation": "supported in YimMenu",
             "m_protFlags": 2,
             "m_moduleSize": 1880
+        },
+        {
+            "m_firstByte": 84,
+            "m_len": 14,
+            "m_hash": 606487130,
+            "m_pageLow": 549,
+            "m_pageHigh": 553,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1726157443,
+            "build": 3274,
+            "m_protFlags": 2,
+            "m_moduleSize": 4496
+        },
+        {
+            "m_firstByte": 77,
+            "m_len": 16,
+            "m_hash": 3284673482,
+            "m_pageLow": 2318,
+            "m_pageHigh": 2322,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1726157443,
+            "build": 3274,
+            "m_protFlags": 64,
+            "m_moduleSize": 11056
+        },
+        {
+            "m_firstByte": 67,
+            "m_len": 16,
+            "m_hash": 787562822,
+            "m_pageLow": 47,
+            "m_pageHigh": 51,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1726157443,
+            "build": 3274,
+            "m_protFlags": 2,
+            "m_moduleSize": 248
         }
     ],
     "INTG": [
