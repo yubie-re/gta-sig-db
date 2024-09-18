@@ -105,34 +105,33 @@
     <svelte:fragment slot="trail"><a href="https://github.com/yubie-re/gta-sig-db"><GithubIcon class="text-2xl" href="https://github.com/yubie-re/gta-sig-db"/></a></svelte:fragment>
 </AppBar>
 
-<div class="container-xl p-6">
-    <div class="container-xl pb-6">
-        <div class="card p-5 bg-primary-300">
-            <p>This contains all past signatures (starting 4/18/2024) added to Grand Theft Auto V's anticheat system. Translations of signature hashes are provided when possible.</p>
+<div class="space-y-5 p-5">
+        <div class="space-y-5">
+            <div class="p-5 bg-primary-300 rounded-full">
+                <p>This contains all past signatures (starting 4/18/2024) added to Grand Theft Auto V's anticheat system. Translations of signature hashes are provided when possible.</p>
+            </div>
+            <div class="bg-amber-200 p-5 rounded-full">
+                Starting with the 3323 game build, Rockstar has officially implemented Battleye, a third-party anticheat solution. This website is obsolete and will no longer be updated, and is kept for purely archival purposes.
+            </div>
         </div>
-    </div>
 
-    <div class="container-xl pb-6">
         <div class="card">
             <header class="card-header">
                 <h3 class="h3">Cheat Signatures</h3>
                 <p>Used to detect cheats which are injected</p>
             </header>
-            <div class="container-xl p-6">
+            <div class="p-6">
                 <RtmaDatatable handler={rtmaHandler}/>
             </div>
         </div>
-    </div>
 
-    <div class="container-xl pb-6">
         <div class="card">
             <header class="card-header">
                 <h3 class="h3">Integrity Signatures</h3>
                 <p>Used to ensure certain memory is not modified</p>
             </header>
-            <div class="container-xl p-6">
+            <div class="p-6">
                 <IntgDatatable handler={intgHandler}/>
             </div>
         </div>
-    </div>
 </div>
