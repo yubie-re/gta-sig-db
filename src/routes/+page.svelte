@@ -111,7 +111,7 @@
                 <p>This contains all past signatures (starting 4/18/2024) added to Grand Theft Auto V's anticheat system. Translations of signature hashes are provided when possible.</p>
             </div>
             <div class="bg-amber-200 p-5 rounded-full">
-                Starting with the 3323 game build, Rockstar has officially implemented Battleye, a third-party anticheat solution. This website is obsolete and will no longer be updated, and is kept for purely archival purposes.
+                Starting with the 3323 game build, Rockstar has officially implemented Battleye, a third-party anticheat solution. This website does not provide anything related to Battleye.
             </div>
         </div>
 

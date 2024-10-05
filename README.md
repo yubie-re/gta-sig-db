@@ -5,4 +5,4 @@ This workflow automatically checks my private sample repo, and updates the websi
 
 ##### Website: https://yubie.dev
 
-⚠️ Starting with the 3323 game build, Rockstar has officially implemented Battleye. a 3rd party anticheat solution. This repository is obselete and will no longer be updated, and is kept for purely archival purposes.
+⚠️ Starting with the 3323 game build, Rockstar has officially implemented Battleye. a 3rd party anticheat solution. This repository does not give any information regarding Battleye.
