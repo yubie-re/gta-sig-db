@@ -139,7 +139,7 @@
             <svelte:fragment slot="lead">
                 <img src={Icon} class="h-14 w-14" alt="Logo" />
             </svelte:fragment>
-            <h3 class="h3">GTA 5 Anticheat Signature Database</h3>
+            <h3 class="h3 font-bold">GTA 5 Anticheat Signature Database</h3>
             <svelte:fragment slot="trail"
                 ><a href="https://github.com/yubie-re/gta-sig-db"
                     ><GithubIcon
