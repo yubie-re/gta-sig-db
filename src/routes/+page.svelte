@@ -152,7 +152,7 @@
 
         <div class="space-y-5 p-5">
             <div class="space-y-5">
-                <div class="p-5 bg-primary-300 rounded-full">
+                <div class="card p-5 bg-primary-300">
                     <p>
                         This contains all past signatures (starting 11/04/2021)
                         added to Grand Theft Auto V's anticheat system.
@@ -160,7 +160,7 @@
                         possible.
                     </p>
                 </div>
-                <div class="bg-amber-200 p-5 rounded-full">
+                <div class="card bg-amber-200 p-5">
                     Starting with the 3323 game build, Rockstar has officially
                     implemented Battleye, a third-party anticheat solution. This
                     website does not provide anything related to Battleye.
