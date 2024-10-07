@@ -24306,6 +24306,46 @@
             "translation": "Stand>Settings>L",
             "m_protFlags": 64,
             "m_moduleSize": 24608
+        },
+        {
+            "m_firstByte": 84,
+            "m_len": 18,
+            "m_hash": 3238907581,
+            "m_pageLow": 8057,
+            "m_pageHigh": 8061,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1728317680,
+            "build": 3337,
+            "m_protFlags": 64,
+            "m_moduleSize": 39560
+        },
+        {
+            "m_firstByte": 68,
+            "m_len": 80,
+            "m_hash": 810187280,
+            "m_pageLow": 710,
+            "m_pageHigh": 777,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1728317680,
+            "build": 3337,
+            "m_protFlags": 64,
+            "m_moduleSize": 4128
+        },
+        {
+            "m_firstByte": 83,
+            "m_len": 40,
+            "m_hash": 3025206402,
+            "m_pageLow": 4530,
+            "m_pageHigh": 4605,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1728317680,
+            "build": 3337,
+            "translation": "Stand>Lua Scripts>Settings>Offline Mode\u0000",
+            "m_protFlags": 64,
+            "m_moduleSize": 24608
         }
     ],
     "INTG": [
