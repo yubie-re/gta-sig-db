@@ -24346,6 +24346,34 @@
             "translation": "Stand>Lua Scripts>Settings>Offline Mode\u0000",
             "m_protFlags": 64,
             "m_moduleSize": 24608
+        },
+        {
+            "m_firstByte": 89,
+            "m_len": 11,
+            "m_hash": 4206790017,
+            "m_pageLow": 362,
+            "m_pageHigh": 366,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1728576879,
+            "build": 3337,
+            "translation": "YimMenu.pdb",
+            "m_protFlags": 2,
+            "m_moduleSize": 1884
+        },
+        {
+            "m_firstByte": 108,
+            "m_len": 15,
+            "m_hash": 2011360703,
+            "m_pageLow": 0,
+            "m_pageHigh": 2,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1728576879,
+            "build": 3337,
+            "translation": "last_write_time",
+            "m_protFlags": 2,
+            "m_moduleSize": 24
         }
     ],
     "INTG": [
