@@ -24374,6 +24374,60 @@
             "translation": "last_write_time",
             "m_protFlags": 2,
             "m_moduleSize": 24
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 13,
+            "m_hash": 1556631979,
+            "m_pageLow": 2558,
+            "m_pageHigh": 2562,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1729786454,
+            "build": 3351,
+            "m_protFlags": 64,
+            "m_moduleSize": 11136
+        },
+        {
+            "m_firstByte": 89,
+            "m_len": 16,
+            "m_hash": 2453058421,
+            "m_pageLow": 361,
+            "m_pageHigh": 365,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1729786454,
+            "build": 3351,
+            "translation": "YimMenu\\build\\Yi",
+            "m_protFlags": 2,
+            "m_moduleSize": 1880
+        },
+        {
+            "m_firstByte": 70,
+            "m_len": 3,
+            "m_hash": 229618902,
+            "m_pageLow": 0,
+            "m_pageHigh": 3,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1729786454,
+            "build": 3351,
+            "translation": "FSL",
+            "m_protFlags": 2,
+            "m_moduleSize": 24
+        },
+        {
+            "m_firstByte": 77,
+            "m_len": 9,
+            "m_hash": 2180296704,
+            "m_pageLow": 2,
+            "m_pageHigh": 6,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1729786454,
+            "build": 3351,
+            "m_protFlags": 2,
+            "m_moduleSize": 252
         }
     ],
     "INTG": [
