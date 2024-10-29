@@ -3,6 +3,6 @@ This contains all past signatures (starting 11/04/2021) added to Grand Theft Aut
 This extends the work of my original project [gtav-sigscan](https://github.com/yubie-re/gtav-sigscan).
 This workflow automatically checks my private sample repo, and updates the website and json accordingly when new signatures are added to the game.
 
-##### Website: https://yubie.dev
+##### Website: https://db.yubie.dev
 
 ⚠️ Starting with the 3323 game build, Rockstar has officially implemented Battleye. a 3rd party anticheat solution. This repository does not give any information regarding Battleye.

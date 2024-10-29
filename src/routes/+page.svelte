@@ -130,7 +130,7 @@
         property="og:description"
         content="Search through GTA 5 anticheat signatures here. Big database of anticheat data dating back to 04/18/2024."
     />
-    <meta property="og:url" content="https://yubie-re.github.io/gta-sig-db/" />
+    <meta property="og:url" content="https://db.yubie.dev" />
 </svelte:head>
 
 {#if loaded}
