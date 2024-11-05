@@ -24482,6 +24482,45 @@
             "translation": "last_write_time",
             "m_protFlags": 2,
             "m_moduleSize": 24
+        },
+        {
+            "m_firstByte": 97,
+            "m_len": 33,
+            "m_hash": 3520765247,
+            "m_pageLow": 1070,
+            "m_pageHigh": 1140,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1730823331,
+            "build": 3351,
+            "m_protFlags": 64,
+            "m_moduleSize": 7004
+        },
+        {
+            "m_firstByte": 105,
+            "m_len": 15,
+            "m_hash": 2423207590,
+            "m_pageLow": 5070,
+            "m_pageHigh": 5140,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1730823331,
+            "build": 3351,
+            "m_protFlags": 64,
+            "m_moduleSize": 24720
+        },
+        {
+            "m_firstByte": 105,
+            "m_len": 15,
+            "m_hash": 41330145,
+            "m_pageLow": 5120,
+            "m_pageHigh": 5185,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1730823331,
+            "build": 3351,
+            "m_protFlags": 64,
+            "m_moduleSize": 24912
         }
     ],
     "INTG": [
