@@ -24562,6 +24562,33 @@
             "build": 3351,
             "m_protFlags": 64,
             "m_moduleSize": 3564
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 16,
+            "m_hash": 2476209802,
+            "m_pageLow": 2588,
+            "m_pageHigh": 2592,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1731687353,
+            "build": 3351,
+            "m_protFlags": 64,
+            "m_moduleSize": 11264
+        },
+        {
+            "m_firstByte": 67,
+            "m_len": 12,
+            "m_hash": 2276312352,
+            "m_pageLow": 471,
+            "m_pageHigh": 472,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1731687353,
+            "build": 3351,
+            "translation": "Cherax Asset",
+            "m_protFlags": 2,
+            "m_moduleSize": 2616
         }
     ],
     "INTG": [
