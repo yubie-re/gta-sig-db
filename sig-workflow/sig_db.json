@@ -24589,6 +24589,19 @@
             "translation": "Cherax Asset",
             "m_protFlags": 2,
             "m_moduleSize": 2616
+        },
+        {
+            "m_firstByte": 84,
+            "m_len": 18,
+            "m_hash": 1418853943,
+            "m_pageLow": 8056,
+            "m_pageHigh": 8060,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1732205766,
+            "build": 3351,
+            "m_protFlags": 64,
+            "m_moduleSize": 39548
         }
     ],
     "INTG": [
