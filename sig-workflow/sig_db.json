@@ -24827,6 +24827,59 @@
             "build": 3411,
             "m_protFlags": 2,
             "m_moduleSize": 884
+        },
+        {
+            "m_firstByte": 89,
+            "m_len": 10,
+            "m_hash": 2087524729,
+            "m_pageLow": 362,
+            "m_pageHigh": 366,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1736439314,
+            "build": 3411,
+            "translation": "YimMenu.pd",
+            "m_protFlags": 2,
+            "m_moduleSize": 1888
+        },
+        {
+            "m_firstByte": 87,
+            "m_len": 18,
+            "m_hash": 169728462,
+            "m_pageLow": 157,
+            "m_pageHigh": 161,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1736439314,
+            "build": 3411,
+            "m_protFlags": 2,
+            "m_moduleSize": 2756
+        },
+        {
+            "m_firstByte": 76,
+            "m_len": 17,
+            "m_hash": 4247324814,
+            "m_pageLow": 671,
+            "m_pageHigh": 675,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1736439314,
+            "build": 3411,
+            "m_protFlags": 64,
+            "m_moduleSize": 3532
+        },
+        {
+            "m_firstByte": 65,
+            "m_len": 13,
+            "m_hash": 2920957091,
+            "m_pageLow": 119,
+            "m_pageHigh": 123,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1736439314,
+            "build": 3411,
+            "m_protFlags": 2,
+            "m_moduleSize": 820
         }
     ],
     "INTG": [
