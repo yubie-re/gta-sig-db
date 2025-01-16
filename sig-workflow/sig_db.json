@@ -24880,6 +24880,127 @@
             "build": 3411,
             "m_protFlags": 2,
             "m_moduleSize": 820
+        },
+        {
+            "m_firstByte": 92,
+            "m_len": 26,
+            "m_hash": 3737452821,
+            "m_pageLow": 362,
+            "m_pageHigh": 366,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737044085,
+            "build": 3411,
+            "translation": "\\YimMenu\\build\\YimMenu.pdb",
+            "m_protFlags": 2,
+            "m_moduleSize": 1888
+        },
+        {
+            "m_firstByte": 77,
+            "m_len": 20,
+            "m_hash": 631308705,
+            "m_pageLow": 110,
+            "m_pageHigh": 114,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737044085,
+            "build": 3411,
+            "m_protFlags": 2,
+            "m_moduleSize": 828
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 10,
+            "m_hash": 2116189816,
+            "m_pageLow": 11,
+            "m_pageHigh": 15,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737044085,
+            "build": 3411,
+            "m_protFlags": 2,
+            "m_moduleSize": 884
+        },
+        {
+            "m_firstByte": 115,
+            "m_len": 10,
+            "m_hash": 2387873779,
+            "m_pageLow": 122,
+            "m_pageHigh": 126,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737044085,
+            "build": 3411,
+            "m_protFlags": 2,
+            "m_moduleSize": 704
+        },
+        {
+            "m_firstByte": 68,
+            "m_len": 77,
+            "m_hash": 166692650,
+            "m_pageLow": 712,
+            "m_pageHigh": 776,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737044085,
+            "build": 3411,
+            "m_protFlags": 64,
+            "m_moduleSize": 4164
+        },
+        {
+            "m_firstByte": 83,
+            "m_len": 24,
+            "m_hash": 415586562,
+            "m_pageLow": 4486,
+            "m_pageHigh": 4550,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737044085,
+            "build": 3411,
+            "translation": "Stand>Settings>Language\u0000",
+            "m_protFlags": 64,
+            "m_moduleSize": 25072
+        },
+        {
+            "m_firstByte": 112,
+            "m_len": 30,
+            "m_hash": 2494786476,
+            "m_pageLow": 419,
+            "m_pageHigh": 429,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737044085,
+            "build": 3411,
+            "translation": "player has modified suspension",
+            "m_protFlags": 2,
+            "m_moduleSize": 2590
+        },
+        {
+            "m_firstByte": 70,
+            "m_len": 40,
+            "m_hash": 3923572187,
+            "m_pageLow": 87,
+            "m_pageHigh": 97,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737044085,
+            "build": 3411,
+            "m_protFlags": 2,
+            "m_moduleSize": 692
+        },
+        {
+            "m_firstByte": 67,
+            "m_len": 20,
+            "m_hash": 2073583149,
+            "m_pageLow": 108,
+            "m_pageHigh": 118,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737044085,
+            "build": 3411,
+            "translation": "Chnaged To: sleeping",
+            "m_protFlags": 2,
+            "m_moduleSize": 732
         }
     ],
     "INTG": [
@@ -27029,6 +27150,30 @@
             "time": 1734452188,
             "build": 3411,
             "translation": "(Hex) { 48 89 5c 24 08 57 48 83 ec 20 81 f9 6d }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 13,
+            "m_hash": 1294404679,
+            "m_pageLow": 2700,
+            "m_pageHigh": 2704,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737044085,
+            "build": 3411,
+            "translation": "(Hex) { 48 89 5c 24 08 57 48 83 ec 20 81 f9 6d }"
+        },
+        {
+            "m_firstByte": 199,
+            "m_len": 8,
+            "m_hash": 2324167865,
+            "m_pageLow": 1012,
+            "m_pageHigh": 1016,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737044085,
+            "build": 3411,
+            "translation": "(Hex) { c7 81 fc 3a 00 00 ff ff }"
         }
     ]
 }
