@@ -25001,6 +25001,59 @@
             "translation": "Chnaged To: sleeping",
             "m_protFlags": 2,
             "m_moduleSize": 732
+        },
+        {
+            "m_firstByte": 67,
+            "m_len": 10,
+            "m_hash": 2112290373,
+            "m_pageLow": 31,
+            "m_pageHigh": 35,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737648885,
+            "build": 3411,
+            "m_protFlags": 2,
+            "m_moduleSize": 372
+        },
+        {
+            "m_firstByte": 87,
+            "m_len": 17,
+            "m_hash": 838042142,
+            "m_pageLow": 519,
+            "m_pageHigh": 523,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737648885,
+            "build": 3411,
+            "m_protFlags": 2,
+            "m_moduleSize": 2644
+        },
+        {
+            "m_firstByte": 115,
+            "m_len": 16,
+            "m_hash": 1047014121,
+            "m_pageLow": 208,
+            "m_pageHigh": 212,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737648885,
+            "build": 3411,
+            "m_protFlags": 2,
+            "m_moduleSize": 1268
+        },
+        {
+            "m_firstByte": 77,
+            "m_len": 22,
+            "m_hash": 3809673908,
+            "m_pageLow": 363,
+            "m_pageHigh": 367,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1737648885,
+            "build": 3411,
+            "translation": "Menu\\build\\YimMenu.pdb",
+            "m_protFlags": 2,
+            "m_moduleSize": 1888
         }
     ],
     "INTG": [
