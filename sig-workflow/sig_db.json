@@ -25054,6 +25054,45 @@
             "translation": "Menu\\build\\YimMenu.pdb",
             "m_protFlags": 2,
             "m_moduleSize": 1888
+        },
+        {
+            "m_firstByte": 78,
+            "m_len": 13,
+            "m_hash": 3396467968,
+            "m_pageLow": 529,
+            "m_pageHigh": 533,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1738340068,
+            "build": 3411,
+            "m_protFlags": 2,
+            "m_moduleSize": 2688
+        },
+        {
+            "m_firstByte": 78,
+            "m_len": 11,
+            "m_hash": 1344121775,
+            "m_pageLow": 518,
+            "m_pageHigh": 522,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1738340068,
+            "build": 3411,
+            "m_protFlags": 2,
+            "m_moduleSize": 2704
+        },
+        {
+            "m_firstByte": 84,
+            "m_len": 14,
+            "m_hash": 3982804024,
+            "m_pageLow": 97,
+            "m_pageHigh": 101,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1738340068,
+            "build": 3411,
+            "m_protFlags": 2,
+            "m_moduleSize": 572
         }
     ],
     "INTG": [
