@@ -25423,6 +25423,19 @@
             "build": 3442,
             "m_protFlags": 2,
             "m_moduleSize": 1508
+        },
+        {
+            "m_firstByte": 110,
+            "m_len": 12,
+            "m_hash": 1897271323,
+            "m_pageLow": 161,
+            "m_pageHigh": 165,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1747498769,
+            "build": 3521,
+            "m_protFlags": 2,
+            "m_moduleSize": 2728
         }
     ],
     "INTG": [
@@ -27764,6 +27777,54 @@
             "time": 1744647547,
             "build": 3504,
             "translation": "(Hex) { 40 53 48 83 ec 20 80 79 6b 00 }"
+        },
+        {
+            "m_firstByte": 64,
+            "m_len": 10,
+            "m_hash": 1832462157,
+            "m_pageLow": 1090,
+            "m_pageHigh": 1097,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1747498769,
+            "build": 3521,
+            "translation": "(Hex) { 40 53 48 83 ec 20 80 79 6b 00 }"
+        },
+        {
+            "m_firstByte": 199,
+            "m_len": 8,
+            "m_hash": 2324167865,
+            "m_pageLow": 1013,
+            "m_pageHigh": 1017,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1747498769,
+            "build": 3521,
+            "translation": "(Hex) { c7 81 fc 3a 00 00 ff ff }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 16,
+            "m_hash": 3467914479,
+            "m_pageLow": 4931,
+            "m_pageHigh": 4935,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1747498769,
+            "build": 3521,
+            "translation": "(Hex) { 48 8b c4 48 81 ec b8 00 00 00 0f 29 70 e8 f3 0f }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 13,
+            "m_hash": 1294404679,
+            "m_pageLow": 2700,
+            "m_pageHigh": 2704,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1747498769,
+            "build": 3521,
+            "translation": "(Hex) { 48 89 5c 24 08 57 48 83 ec 20 81 f9 6d }"
         }
     ]
 }
