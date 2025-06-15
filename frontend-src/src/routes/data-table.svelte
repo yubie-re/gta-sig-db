@@ -122,7 +122,7 @@
 	</Table.Root>
 
 	<div class="flex items-center justify-between space-x-2">
-		<span>
+		<span class="hidden sm:inline">
 			Showing {table.getRowModel().rows.length > 0
 				? `${pagination.pageIndex * pagination.pageSize + 1}–${pagination.pageIndex * pagination.pageSize + table.getRowModel().rows.length}`
 				: 0}

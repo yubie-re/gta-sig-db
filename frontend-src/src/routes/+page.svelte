@@ -36,7 +36,7 @@
 
 <div class="space-y-6" in:blur={{ duration: 300 }}>
 	<!-- Navigation Selector -->
-	<div class="flex justify-center space-x-3">
+	<div class="flex flex-col items-center space-y-2 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-3">
 		<div class="flex items-center space-x-1">
 			<span class="text-sm font-medium">Platform:</span>
 			<Select.Root type="single" bind:value={selectedPlatform}>
