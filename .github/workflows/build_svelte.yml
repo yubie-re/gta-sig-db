@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/${{ github.event.repository.name }}/site-src'
+          BASE_PATH: '/${{ github.event.repository.name }}/frontend-src'
         run: |
           npm run build
 
