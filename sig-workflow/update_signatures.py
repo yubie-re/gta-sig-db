@@ -1,4 +1,5 @@
 import json
+import sys
 
 def load_json(file_path):
     try:
@@ -44,7 +45,8 @@ def merge_and_deduplicate(old_data, new_data):
     return combined
 
 if __name__ == "__main__":
-    existing_sigs = load_json('sig_db.json')
-    new_sigs = load_json('signatures.json')  # Assuming new data is stored here after tool execution
+    platform = sys.argv[1] if len(sys.argv) > 1 else "pcrosalt"
+    existing_sigs = load_json(f'sig_db_{platform}.json')
+    new_sigs = load_json(f'signatures-{platform}.json')  # Assuming new data is stored here after tool execution
     updated_sigs = merge_and_deduplicate(existing_sigs, new_sigs)
-    save_json(updated_sigs, 'sig_db.json')
+    save_json(updated_sigs, f'sig_db_{platform}.json')

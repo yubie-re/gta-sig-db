@@ -1,16 +1,19 @@
 name: Update GTA V Signature Database
 
 on:
-  workflow_dispatch:
-  schedule:
-      - cron: "0 16 * * *" # Runs every day at 4pm UTC (12pm EST)
-  push:
-      branches:
-          - main
+    workflow_dispatch:
+    schedule:
+        - cron: "0 16 * * *" # Runs every day at 4pm UTC (12pm EST)
+    push:
+        branches:
+            - main
 
 jobs:
     update-signatures:
         runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                platform: [pcrosalt, pcros]
 
         steps:
             - name: Checkout gta5-sig-samples repository
@@ -24,13 +27,13 @@ jobs:
                   latest_url=$(curl -s https://api.github.com/repos/yubie-re/gtav-sigscan/releases/latest | grep "browser_download_url.*sigscan-linux.elf" | cut -d : -f 2,3 | tr -d \")
                   curl -L -o gtav-sigscan/build/src/sigscan-linux.elf $latest_url
                   chmod +x gtav-sigscan/build/src/sigscan-linux.elf
-                  gtav-sigscan/build/src/sigscan-linux.elf -s ./signatures.json -z
+                  gtav-sigscan/build/src/sigscan-linux.elf -s ./signatures-${{ matrix.platform }}.json -z -p ${{ matrix.platform }}
 
             - name: Upload signature JSON artifact
               uses: actions/upload-artifact@v4
               with:
-                  name: signatures.json
-                  path: signatures.json
+                  name: signatures-${{ matrix.platform }}.json
+                  path: signatures-${{ matrix.platform }}.json
 
             - name: Checkout gta-sig-db repository
               uses: actions/checkout@v4
@@ -44,19 +47,19 @@ jobs:
 
             - name: Copy new signatures to gta-sig-db and deduplicate
               run: |
-                  cp signatures.json gta-sig-db/sig-workflow/signatures.json
+                  cp signatures-${{ matrix.platform }}.json gta-sig-db/sig-workflow/signatures-${{ matrix.platform }}.json
                   cd gta-sig-db/sig-workflow
-                  python update_signatures.py
+                  python update_signatures.py ${{ matrix.platform }}
 
             - name: Commit and push changes if there are updates
               run: |
                   git config --local user.email "action@github.com"
                   git config --local user.name "GitHub Action"
-                  git add sig-workflow/sig_db.json
+                  git add sig-workflow/sig_db_${{ matrix.platform }}.json
                   if git diff --staged --quiet; then
-                    echo "No changes to sig_db.json"
+                    echo "No changes to sig_db_${{ matrix.platform }}.json"
                   else
-                    git commit -m "Update sig_db.json with new data"
+                    git commit -m "Update sig_db_${{ matrix.platform }}.json with new data for ${{ matrix.platform }}"
                     git push https://${{ secrets.GITHUB_TOKEN }}@github.com/yubie-re/gta-sig-db.git
                   fi
               working-directory: gta-sig-db
