@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { blur } from 'svelte/transition';
+	import { blur, fade } from 'svelte/transition';
 	import { Button } from '$lib/components/ui/button';
 	import * as Select from '$lib/components/ui/select';
 
@@ -34,7 +34,7 @@
 	<meta property="twitter:image" content="https://db.yubie.dev/meta/og.png" />
 </svelte:head>
 
-<div class="space-y-6" in:blur={{ duration: 300 }}>
+<div class="space-y-6">
 	<!-- Navigation Selector -->
 	<div class="flex flex-col items-center space-y-2 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-3">
 		<div class="flex items-center space-x-1">
@@ -63,15 +63,16 @@
 			</Select.Root>
 		</div>
 	</div>
-    {#if selectedType === 'rtma'}
-        <RtmaDataTable
-            data={selectedPlatform === 'pcrosalt' ? data.pcrosalt.rtmaData : data.pcros.rtmaData}
-            columns={rtmaColumns}
-        />
-    {:else}
-        <RtmaDataTable
-            data={selectedPlatform === 'pcrosalt' ? data.pcrosalt.intgData : data.pcros.intgData}
-            columns={intgColumns}
-        />
-    {/if}
+	{#key selectedType}
+		<div transition:fade={{ duration: 300 }}>
+			<RtmaDataTable
+				data={
+					selectedType === 'rtma'
+						? (selectedPlatform === 'pcrosalt' ? data.pcrosalt.rtmaData : data.pcros.rtmaData)
+						: (selectedPlatform === 'pcrosalt' ? data.pcrosalt.intgData : data.pcros.intgData)
+				}
+				columns={selectedType === 'rtma' ? rtmaColumns : intgColumns}
+			/>
+		</div>
+	{/key}
 </div>

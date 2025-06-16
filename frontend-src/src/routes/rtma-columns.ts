@@ -41,14 +41,6 @@ export const rtmaColumns: ColumnDef<ProcessedSignature>[] = [
       }),
   },
   {
-    accessorKey: "flags",
-    header: ({ column }) =>
-      renderComponent(SortButton, {
-        onclick: column.getToggleSortingHandler(),
-        label: "Flags",
-      }),
-  },
-  {
     accessorKey: "moduleSize",
     header: ({ column }) =>
       renderComponent(SortButton, {
