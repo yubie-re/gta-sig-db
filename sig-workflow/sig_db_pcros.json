@@ -24441,6 +24441,33 @@
             "build": 3521,
             "m_protFlags": 64,
             "m_moduleSize": 4116
+        },
+        {
+            "m_firstByte": 115,
+            "m_len": 12,
+            "m_hash": 1262147772,
+            "m_pageLow": 207,
+            "m_pageHigh": 211,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750436226,
+            "build": 3570,
+            "m_protFlags": 2,
+            "m_moduleSize": 1268
+        },
+        {
+            "m_firstByte": 119,
+            "m_len": 8,
+            "m_hash": 4016915968,
+            "m_pageLow": 30,
+            "m_pageHigh": 34,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750436226,
+            "build": 3570,
+            "translation": "with FSL",
+            "m_protFlags": 2,
+            "m_moduleSize": 164
         }
     ],
     "INTG": [
@@ -26830,6 +26857,54 @@
             "time": 1746763200,
             "build": 3521,
             "translation": "(Hex) { 48 89 5c 24 08 57 48 83 ec 20 81 f9 6d }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 13,
+            "m_hash": 1294404679,
+            "m_pageLow": 2703,
+            "m_pageHigh": 2707,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750436226,
+            "build": 3570,
+            "translation": "(Hex) { 48 89 5c 24 08 57 48 83 ec 20 81 f9 6d }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 16,
+            "m_hash": 3467914479,
+            "m_pageLow": 4932,
+            "m_pageHigh": 4936,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750436226,
+            "build": 3570,
+            "translation": "(Hex) { 48 8b c4 48 81 ec b8 00 00 00 0f 29 70 e8 f3 0f }"
+        },
+        {
+            "m_firstByte": 199,
+            "m_len": 8,
+            "m_hash": 2324167865,
+            "m_pageLow": 1014,
+            "m_pageHigh": 1018,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750436226,
+            "build": 3570,
+            "translation": "(Hex) { c7 81 fc 3a 00 00 ff ff }"
+        },
+        {
+            "m_firstByte": 64,
+            "m_len": 10,
+            "m_hash": 1832462157,
+            "m_pageLow": 1095,
+            "m_pageHigh": 1099,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750436226,
+            "build": 3570,
+            "translation": "(Hex) { 40 53 48 83 ec 20 80 79 6b 00 }"
         }
     ]
 }
