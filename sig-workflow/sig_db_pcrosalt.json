@@ -188,6 +188,75 @@
             "build": 814,
             "m_protFlags": 64,
             "m_moduleSize": 2092
+        },
+        {
+            "m_firstByte": 119,
+            "m_len": 8,
+            "m_hash": 4016915968,
+            "m_pageLow": 30,
+            "m_pageHigh": 34,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750695488,
+            "build": 889,
+            "translation": "with FSL",
+            "m_protFlags": 2,
+            "m_moduleSize": 164
+        },
+        {
+            "m_firstByte": 80,
+            "m_len": 16,
+            "m_hash": 448719796,
+            "m_pageLow": 25,
+            "m_pageHigh": 29,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750695488,
+            "build": 889,
+            "translation": "Play with YimMen",
+            "m_protFlags": 2,
+            "m_moduleSize": 2352
+        },
+        {
+            "m_firstByte": 89,
+            "m_len": 17,
+            "m_hash": 770991062,
+            "m_pageLow": 12,
+            "m_pageHigh": 16,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750695488,
+            "build": 889,
+            "translation": "YimMenu::SavedLoc",
+            "m_protFlags": 2,
+            "m_moduleSize": 2032
+        },
+        {
+            "m_firstByte": 91,
+            "m_len": 22,
+            "m_hash": 1419141110,
+            "m_pageLow": 350,
+            "m_pageHigh": 354,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750695488,
+            "build": 889,
+            "m_protFlags": 64,
+            "m_moduleSize": 2080
+        },
+        {
+            "m_firstByte": 89,
+            "m_len": 15,
+            "m_hash": 2071666198,
+            "m_pageLow": 341,
+            "m_pageHigh": 345,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750695488,
+            "build": 889,
+            "translation": "YimMenu::Native",
+            "m_protFlags": 2,
+            "m_moduleSize": 2032
         }
     ],
     "INTG": [
@@ -249,6 +318,42 @@
             "m_unk2": 1,
             "time": 1747800000,
             "build": 814,
+            "translation": "(Hex) { 56 48 83 ec 20 48 89 }"
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 14,
+            "m_hash": 3449842226,
+            "m_pageLow": 270,
+            "m_pageHigh": 274,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750695488,
+            "build": 889,
+            "translation": "(Hex) { 56 48 81 ec a0 00 00 00 44 0f 29 ac 24 90 }"
+        },
+        {
+            "m_firstByte": 199,
+            "m_len": 8,
+            "m_hash": 2324167865,
+            "m_pageLow": 1718,
+            "m_pageHigh": 1722,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750695488,
+            "build": 889,
+            "translation": "(Hex) { c7 81 fc 3a 00 00 ff ff }"
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 7,
+            "m_hash": 2903937935,
+            "m_pageLow": 4712,
+            "m_pageHigh": 4716,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1750695488,
+            "build": 889,
             "translation": "(Hex) { 56 48 83 ec 20 48 89 }"
         }
     ]
