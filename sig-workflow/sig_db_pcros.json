@@ -24561,6 +24561,71 @@
             "build": 3570,
             "m_protFlags": 2,
             "m_moduleSize": 184
+        },
+        {
+            "m_firstByte": 70,
+            "m_len": 15,
+            "m_hash": 746870412,
+            "m_pageLow": 33,
+            "m_pageHigh": 37,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1752164291,
+            "build": 3586,
+            "m_protFlags": 2,
+            "m_moduleSize": 184
+        },
+        {
+            "m_firstByte": 97,
+            "m_len": 14,
+            "m_hash": 3500955059,
+            "m_pageLow": 360,
+            "m_pageHigh": 364,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1752164291,
+            "build": 3586,
+            "m_protFlags": 64,
+            "m_moduleSize": 2116
+        },
+        {
+            "m_firstByte": 97,
+            "m_len": 16,
+            "m_hash": 2217268686,
+            "m_pageLow": 51,
+            "m_pageHigh": 55,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1752164291,
+            "build": 3586,
+            "m_protFlags": 2,
+            "m_moduleSize": 2836
+        },
+        {
+            "m_firstByte": 71,
+            "m_len": 17,
+            "m_hash": 251073646,
+            "m_pageLow": 207,
+            "m_pageHigh": 211,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1752164291,
+            "build": 3586,
+            "m_protFlags": 2,
+            "m_moduleSize": 1268
+        },
+        {
+            "m_firstByte": 115,
+            "m_len": 9,
+            "m_hash": 279205335,
+            "m_pageLow": 18,
+            "m_pageHigh": 22,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1752164291,
+            "build": 3586,
+            "m_protFlags": 2,
+            "m_moduleSize": 704
         }
     ],
     "INTG": [
@@ -26997,6 +27062,54 @@
             "m_unk2": 1,
             "time": 1750436226,
             "build": 3570,
+            "translation": "(Hex) { 40 53 48 83 ec 20 80 79 6b 00 }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 13,
+            "m_hash": 1294404679,
+            "m_pageLow": 2703,
+            "m_pageHigh": 2707,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1752164291,
+            "build": 3586,
+            "translation": "(Hex) { 48 89 5c 24 08 57 48 83 ec 20 81 f9 6d }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 14,
+            "m_hash": 4137838701,
+            "m_pageLow": 4932,
+            "m_pageHigh": 4936,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1752164291,
+            "build": 3586,
+            "translation": "(Hex) { 48 8b c4 48 81 ec b8 00 00 00 0f 29 70 e8 }"
+        },
+        {
+            "m_firstByte": 199,
+            "m_len": 11,
+            "m_hash": 2772190860,
+            "m_pageLow": 1014,
+            "m_pageHigh": 1018,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1752164291,
+            "build": 3586,
+            "translation": "(Hex) { c7 81 fc 3a 00 00 ff ff ff 0f c3 }"
+        },
+        {
+            "m_firstByte": 64,
+            "m_len": 10,
+            "m_hash": 1832462157,
+            "m_pageLow": 1095,
+            "m_pageHigh": 1099,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1752164291,
+            "build": 3586,
             "translation": "(Hex) { 40 53 48 83 ec 20 80 79 6b 00 }"
         }
     ]
