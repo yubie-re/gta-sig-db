@@ -16,6 +16,12 @@ jobs:
                 platform: [pcrosalt, pcros]
 
         steps:
+            - name: Generate GitHub App token
+              id: app-token
+              uses: actions/create-github-app-token@v2
+              with:
+                app-id: ${{ secrets.APP_ID }}
+                private-key: ${{ secrets.APP_PRIV_KEY }}
             - name: Checkout gta5-sig-samples repository
               run: |
                   git clone https://x-access-token:${{ secrets.GTA_SAMPLE_PAT }}@github.com/yubie-re/gta5-sig-samples.git files
@@ -53,13 +59,13 @@ jobs:
 
             - name: Commit and push changes if there are updates
               run: |
-                  git config --local user.email "action@github.com"
-                  git config --local user.name "GitHub Action"
+                  git config user.name "${{ steps.app-token.outputs.app-slug }}[bot]"
+                  git config user.email "${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com"
                   git add sig-workflow/sig_db_${{ matrix.platform }}.json
                   if git diff --staged --quiet; then
                     echo "No changes to sig_db_${{ matrix.platform }}.json"
                   else
                     git commit -m "Update sig_db_${{ matrix.platform }}.json with new data for ${{ matrix.platform }}"
-                    git push https://${{ secrets.GITHUB_TOKEN }}@github.com/yubie-re/gta-sig-db.git
+                    git push https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/yubie-re/gta-sig-db.git
                   fi
               working-directory: gta-sig-db
