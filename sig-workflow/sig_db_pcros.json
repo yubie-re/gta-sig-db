@@ -24732,6 +24732,19 @@
             "translation": "YimMenu to kee",
             "m_protFlags": 2,
             "m_moduleSize": 4964
+        },
+        {
+            "m_firstByte": 65,
+            "m_len": 16,
+            "m_hash": 3262099989,
+            "m_pageLow": 191,
+            "m_pageHigh": 195,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1759162448,
+            "build": 3586,
+            "m_protFlags": 2,
+            "m_moduleSize": 2612
         }
     ],
     "INTG": [
