@@ -24745,6 +24745,19 @@
             "build": 3586,
             "m_protFlags": 2,
             "m_moduleSize": 2612
+        },
+        {
+            "m_firstByte": 105,
+            "m_len": 13,
+            "m_hash": 3558782705,
+            "m_pageLow": 5000,
+            "m_pageHigh": 5100,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1760112998,
+            "build": 3586,
+            "m_protFlags": 64,
+            "m_moduleSize": 24359
         }
     ],
     "INTG": [
