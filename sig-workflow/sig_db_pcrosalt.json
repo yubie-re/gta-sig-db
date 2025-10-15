@@ -605,6 +605,47 @@
             "build": 889,
             "m_protFlags": 2,
             "m_moduleSize": 2420
+        },
+        {
+            "m_firstByte": 76,
+            "m_len": 30,
+            "m_hash": 3760595761,
+            "m_pageLow": 400,
+            "m_pageHigh": 450,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1760544893,
+            "build": 889,
+            "translation": "Loading GTA Online with Cherax",
+            "m_protFlags": 2,
+            "m_moduleSize": 2752
+        },
+        {
+            "m_firstByte": 67,
+            "m_len": 64,
+            "m_hash": 2919050066,
+            "m_pageLow": 0,
+            "m_pageHigh": 32,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1760544893,
+            "build": 889,
+            "m_protFlags": 2,
+            "m_moduleSize": 1127
+        },
+        {
+            "m_firstByte": 105,
+            "m_len": 6,
+            "m_hash": 1267261184,
+            "m_pageLow": 22032,
+            "m_pageHigh": 22036,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1760544893,
+            "build": 889,
+            "translation": "iptide",
+            "m_protFlags": 64,
+            "m_moduleSize": 90164
         }
     ],
     "INTG": [
