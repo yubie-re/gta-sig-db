@@ -646,6 +646,19 @@
             "translation": "iptide",
             "m_protFlags": 64,
             "m_moduleSize": 90164
+        },
+        {
+            "m_firstByte": 99,
+            "m_len": 13,
+            "m_hash": 1981296535,
+            "m_pageLow": 3868,
+            "m_pageHigh": 3872,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1761668308,
+            "build": 889,
+            "m_protFlags": 2,
+            "m_moduleSize": 15956
         }
     ],
     "INTG": [
