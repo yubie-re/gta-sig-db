@@ -781,6 +781,42 @@
             "time": 1755620343,
             "build": 889,
             "translation": "(Hex) { 56 48 83 ec 20 48 89 ce }"
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 14,
+            "m_hash": 3449842226,
+            "m_pageLow": 272,
+            "m_pageHigh": 276,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1765988446,
+            "build": 1013,
+            "translation": "(Hex) { 56 48 81 ec a0 00 00 00 44 0f 29 ac 24 90 }"
+        },
+        {
+            "m_firstByte": 199,
+            "m_len": 8,
+            "m_hash": 2324167865,
+            "m_pageLow": 1717,
+            "m_pageHigh": 1721,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1765988446,
+            "build": 1013,
+            "translation": "(Hex) { c7 81 fc 3a 00 00 ff ff }"
+        },
+        {
+            "m_firstByte": 65,
+            "m_len": 15,
+            "m_hash": 234327567,
+            "m_pageLow": 4733,
+            "m_pageHigh": 4737,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1765988446,
+            "build": 1013,
+            "translation": "(Hex) { 41 57 41 56 41 55 41 54 56 57 55 53 48 81 ec }"
         }
     ]
 }
