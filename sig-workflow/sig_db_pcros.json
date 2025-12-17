@@ -27343,6 +27343,54 @@
             "time": 1765556278,
             "build": 3717,
             "translation": "(Hex) { 40 53 48 83 ec 20 80 79 6b 00 }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 13,
+            "m_hash": 1294404679,
+            "m_pageLow": 2698,
+            "m_pageHigh": 2702,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1765988409,
+            "build": 3725,
+            "translation": "(Hex) { 48 89 5c 24 08 57 48 83 ec 20 81 f9 6d }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 16,
+            "m_hash": 3467914479,
+            "m_pageLow": 4932,
+            "m_pageHigh": 4936,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1765988409,
+            "build": 3725,
+            "translation": "(Hex) { 48 8b c4 48 81 ec b8 00 00 00 0f 29 70 e8 f3 0f }"
+        },
+        {
+            "m_firstByte": 199,
+            "m_len": 8,
+            "m_hash": 2324167865,
+            "m_pageLow": 1008,
+            "m_pageHigh": 1012,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1765988409,
+            "build": 3725,
+            "translation": "(Hex) { c7 81 fc 3a 00 00 ff ff }"
+        },
+        {
+            "m_firstByte": 64,
+            "m_len": 10,
+            "m_hash": 1832462157,
+            "m_pageLow": 1089,
+            "m_pageHigh": 1093,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1765988409,
+            "build": 3725,
+            "translation": "(Hex) { 40 53 48 83 ec 20 80 79 6b 00 }"
         }
     ]
 }
