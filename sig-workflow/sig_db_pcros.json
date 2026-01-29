@@ -24810,6 +24810,72 @@
             "build": 3717,
             "m_protFlags": 2,
             "m_moduleSize": 184
+        },
+        {
+            "m_firstByte": 89,
+            "m_len": 11,
+            "m_hash": 4206790017,
+            "m_pageLow": 365,
+            "m_pageHigh": 369,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1769704533,
+            "build": 3751,
+            "translation": "YimMenu.pdb",
+            "m_protFlags": 2,
+            "m_moduleSize": 1896
+        },
+        {
+            "m_firstByte": 109,
+            "m_len": 10,
+            "m_hash": 250214041,
+            "m_pageLow": 2551,
+            "m_pageHigh": 2555,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1769704533,
+            "build": 3751,
+            "m_protFlags": 64,
+            "m_moduleSize": 10896
+        },
+        {
+            "m_firstByte": 97,
+            "m_len": 17,
+            "m_hash": 1072284962,
+            "m_pageLow": 14,
+            "m_pageHigh": 18,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1769704533,
+            "build": 3751,
+            "m_protFlags": 2,
+            "m_moduleSize": 2640
+        },
+        {
+            "m_firstByte": 78,
+            "m_len": 17,
+            "m_hash": 3745734722,
+            "m_pageLow": 7719,
+            "m_pageHigh": 7723,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1769704533,
+            "build": 3751,
+            "m_protFlags": 64,
+            "m_moduleSize": 34052
+        },
+        {
+            "m_firstByte": 83,
+            "m_len": 18,
+            "m_hash": 1658477936,
+            "m_pageLow": 97,
+            "m_pageHigh": 101,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1769704533,
+            "build": 3751,
+            "m_protFlags": 4,
+            "m_moduleSize": 756
         }
     ],
     "INTG": [
@@ -27390,6 +27456,54 @@
             "m_unk2": 1,
             "time": 1765988409,
             "build": 3725,
+            "translation": "(Hex) { 40 53 48 83 ec 20 80 79 6b 00 }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 13,
+            "m_hash": 1294404679,
+            "m_pageLow": 2698,
+            "m_pageHigh": 2702,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1769704533,
+            "build": 3751,
+            "translation": "(Hex) { 48 89 5c 24 08 57 48 83 ec 20 81 f9 6d }"
+        },
+        {
+            "m_firstByte": 72,
+            "m_len": 16,
+            "m_hash": 3467914479,
+            "m_pageLow": 4933,
+            "m_pageHigh": 4937,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1769704533,
+            "build": 3751,
+            "translation": "(Hex) { 48 8b c4 48 81 ec b8 00 00 00 0f 29 70 e8 f3 0f }"
+        },
+        {
+            "m_firstByte": 199,
+            "m_len": 8,
+            "m_hash": 2324167865,
+            "m_pageLow": 1008,
+            "m_pageHigh": 1012,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1769704533,
+            "build": 3751,
+            "translation": "(Hex) { c7 81 fc 3a 00 00 ff ff }"
+        },
+        {
+            "m_firstByte": 64,
+            "m_len": 10,
+            "m_hash": 1832462157,
+            "m_pageLow": 1089,
+            "m_pageHigh": 1093,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1769704533,
+            "build": 3751,
             "translation": "(Hex) { 40 53 48 83 ec 20 80 79 6b 00 }"
         }
     ]
