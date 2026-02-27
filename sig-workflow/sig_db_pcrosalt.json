@@ -791,6 +791,45 @@
             "build": 1013,
             "m_protFlags": 64,
             "m_moduleSize": 4252
+        },
+        {
+            "m_firstByte": 99,
+            "m_len": 14,
+            "m_hash": 1219809383,
+            "m_pageLow": 378,
+            "m_pageHigh": 382,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1772210007,
+            "build": 1013,
+            "m_protFlags": 64,
+            "m_moduleSize": 4144
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 13,
+            "m_hash": 1160545471,
+            "m_pageLow": 177,
+            "m_pageHigh": 181,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1772210007,
+            "build": 1013,
+            "m_protFlags": 2,
+            "m_moduleSize": 788
+        },
+        {
+            "m_firstByte": 83,
+            "m_len": 15,
+            "m_hash": 750336975,
+            "m_pageLow": 12,
+            "m_pageHigh": 16,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1772210007,
+            "build": 1013,
+            "m_protFlags": 64,
+            "m_moduleSize": 4140
         }
     ],
     "INTG": [
