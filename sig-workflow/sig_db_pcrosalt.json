@@ -830,6 +830,59 @@
             "build": 1013,
             "m_protFlags": 64,
             "m_moduleSize": 4140
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 8,
+            "m_hash": 2977920219,
+            "m_pageLow": 43,
+            "m_pageHigh": 47,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1774457795,
+            "build": 1013,
+            "m_protFlags": 2,
+            "m_moduleSize": 764
+        },
+        {
+            "m_firstByte": 97,
+            "m_len": 11,
+            "m_hash": 3979874320,
+            "m_pageLow": 7,
+            "m_pageHigh": 11,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1774457795,
+            "build": 1013,
+            "m_protFlags": 2,
+            "m_moduleSize": 2492
+        },
+        {
+            "m_firstByte": 115,
+            "m_len": 10,
+            "m_hash": 5211975,
+            "m_pageLow": 25,
+            "m_pageHigh": 29,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1774457795,
+            "build": 1013,
+            "m_protFlags": 64,
+            "m_moduleSize": 4140
+        },
+        {
+            "m_firstByte": 89,
+            "m_len": 18,
+            "m_hash": 4151212024,
+            "m_pageLow": 15,
+            "m_pageHigh": 19,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1774457795,
+            "build": 1013,
+            "translation": "YimMenu::Anticheat",
+            "m_protFlags": 2,
+            "m_moduleSize": 2676
         }
     ],
     "INTG": [
@@ -1000,6 +1053,30 @@
             "time": 1770049860,
             "build": 1013,
             "translation": "(Hex) { 56 48 81 ec a0 00 00 00 44 0f 29 ac 24 90 00 00 00 44 0f 29 a4 24 80 00 00 00 44 0f 29 5c 24 70 44 0f 29 54 24 60 44 0f 29 4c 24 50 44 0f 29 44 24 40 0f 29 7c 24 30 0f 29 74 24 20 44 0f 28 c2 }"
+        },
+        {
+            "m_firstByte": 199,
+            "m_len": 8,
+            "m_hash": 2324167865,
+            "m_pageLow": 1718,
+            "m_pageHigh": 1722,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1774457795,
+            "build": 1013,
+            "translation": "(Hex) { c7 81 fc 3a 00 00 ff ff }"
+        },
+        {
+            "m_firstByte": 65,
+            "m_len": 15,
+            "m_hash": 234327567,
+            "m_pageLow": 4734,
+            "m_pageHigh": 4737,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1774457795,
+            "build": 1013,
+            "translation": "(Hex) { 41 57 41 56 41 55 41 54 56 57 55 53 48 81 ec }"
         }
     ]
 }
