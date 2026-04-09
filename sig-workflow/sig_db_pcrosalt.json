@@ -883,6 +883,45 @@
             "translation": "YimMenu::Anticheat",
             "m_protFlags": 2,
             "m_moduleSize": 2676
+        },
+        {
+            "m_firstByte": 83,
+            "m_len": 11,
+            "m_hash": 2482456629,
+            "m_pageLow": 559,
+            "m_pageHigh": 563,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1775754008,
+            "build": 1013,
+            "m_protFlags": 64,
+            "m_moduleSize": 4128
+        },
+        {
+            "m_firstByte": 78,
+            "m_len": 12,
+            "m_hash": 129612769,
+            "m_pageLow": 8262,
+            "m_pageHigh": 8266,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1775754008,
+            "build": 1013,
+            "m_protFlags": 64,
+            "m_moduleSize": 35280
+        },
+        {
+            "m_firstByte": 86,
+            "m_len": 15,
+            "m_hash": 2754920886,
+            "m_pageLow": 150,
+            "m_pageHigh": 154,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1775754008,
+            "build": 1013,
+            "m_protFlags": 2,
+            "m_moduleSize": 764
         }
     ],
     "INTG": [
@@ -1075,6 +1114,30 @@
             "m_unk1": 1,
             "m_unk2": 1,
             "time": 1774457795,
+            "build": 1013,
+            "translation": "(Hex) { 41 57 41 56 41 55 41 54 56 57 55 53 48 81 ec }"
+        },
+        {
+            "m_firstByte": 199,
+            "m_len": 8,
+            "m_hash": 2324167865,
+            "m_pageLow": 1719,
+            "m_pageHigh": 1723,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1775754008,
+            "build": 1013,
+            "translation": "(Hex) { c7 81 fc 3a 00 00 ff ff }"
+        },
+        {
+            "m_firstByte": 65,
+            "m_len": 15,
+            "m_hash": 234327567,
+            "m_pageLow": 4761,
+            "m_pageHigh": 4765,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1775754008,
             "build": 1013,
             "translation": "(Hex) { 41 57 41 56 41 55 41 54 56 57 55 53 48 81 ec }"
         }
