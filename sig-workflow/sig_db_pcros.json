@@ -25087,6 +25087,47 @@
             "build": 3788,
             "m_protFlags": 64,
             "m_moduleSize": 10752
+        },
+        {
+            "m_firstByte": 89,
+            "m_len": 15,
+            "m_hash": 1273034621,
+            "m_pageLow": 244,
+            "m_pageHigh": 248,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1778260007,
+            "build": 3788,
+            "translation": "YimMenu version",
+            "m_protFlags": 2,
+            "m_moduleSize": 1908
+        },
+        {
+            "m_firstByte": 84,
+            "m_len": 15,
+            "m_hash": 859335653,
+            "m_pageLow": 0,
+            "m_pageHigh": 4,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1778260007,
+            "build": 3788,
+            "m_protFlags": 2,
+            "m_moduleSize": 52
+        },
+        {
+            "m_firstByte": 89,
+            "m_len": 11,
+            "m_hash": 192934597,
+            "m_pageLow": 133,
+            "m_pageHigh": 137,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1778260007,
+            "build": 3788,
+            "translation": "YimMenu DLL",
+            "m_protFlags": 2,
+            "m_moduleSize": 1908
         }
     ],
     "INTG": [
