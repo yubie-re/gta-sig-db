@@ -25128,6 +25128,32 @@
             "translation": "YimMenu DLL",
             "m_protFlags": 2,
             "m_moduleSize": 1908
+        },
+        {
+            "m_firstByte": 83,
+            "m_len": 14,
+            "m_hash": 3806143136,
+            "m_pageLow": 3201,
+            "m_pageHigh": 3205,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1779993087,
+            "build": 3788,
+            "m_protFlags": 64,
+            "m_moduleSize": 16132
+        },
+        {
+            "m_firstByte": 115,
+            "m_len": 12,
+            "m_hash": 2889770155,
+            "m_pageLow": 2960,
+            "m_pageHigh": 2964,
+            "m_unk1": 1,
+            "m_unk2": 1,
+            "time": 1779993087,
+            "build": 3788,
+            "m_protFlags": 64,
+            "m_moduleSize": 16700
         }
     ],
     "INTG": [
